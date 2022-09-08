@@ -21,7 +21,7 @@ jobs:
         cat $File| sed 1d | awk -F'"' -v OFS='' '{ for (i=2; i<=NF; i+=2) gsub(",", "", $i) } 1' |while read line
         do
             TotalPopulation=$( echo $line | cut -d',' -f5 )
-          if [ $TotalPopulation -gt 1000000 ]
+          if [ $TotalPopulation -gt 100000 ]
           then
             StateAbbr=$( echo $line | cut -d',' -f1 )
             CountyName=$( echo $line | cut -d',' -f3 )
