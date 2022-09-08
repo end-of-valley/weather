@@ -22,16 +22,16 @@ jobs:
         do
             TotalPopulation=$( echo $line | cut -d',' -f5 )
           if [ $TotalPopulation -gt 1000000 ]
-          then
-            StateAbbr=$( echo $line | cut -d',' -f1 )
-            CountyName=$( echo $line | cut -d',' -f3 )
-            coor=$( echo $line | cut -d',' -f126 )
-            long=$( echo $coor | tr '()' ' '| cut -d' ' -f3 )
-            lat=$( echo $coor | tr '()' ' '| cut -d' ' -f4 )
-            url=$(printf "https://api.weather.gov/points/%.4f,%.4f" "$lat" "$long")
-            info=$(curl $url| tac | tac)
-            urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
-            curl $urldata --compressed | tac | tac | jq --sort-keys . > forecastGridData/$StateAbbr"_"$CountyName".json"
+              then
+          StateAbbr=$( echo $line | cut -d',' -f1 )
+          CountyName=$( echo $line | cut -d',' -f3 )
+          coor=$( echo $line | cut -d',' -f126 )
+          long=$( echo $coor | tr '()' ' '| cut -d' ' -f3 )
+          lat=$( echo $coor | tr '()' ' '| cut -d' ' -f4 )
+          url=$(printf "https://api.weather.gov/points/%.4f,%.4f" "$lat" "$long")
+          info=$(curl $url)
+          urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
+          curl $urldata > forecastGridData/$StateAbbr"_"$CountyName".json"
           fi
         done
     - name: Commit and push if it changed
