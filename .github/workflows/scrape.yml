@@ -31,7 +31,7 @@ jobs:
             url=$(printf "https://api.weather.gov/points/%.4f,%.4f" "$lat" "$long")
             info=$(curl $url)
             urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
-            curl $urldata --compressed | jq --sort-keys . > forecastGridData/$StateAbbr"_"$CountyName".json"
+            curl $urldata --compressed |  tac | tac | jq --sort-keys . > forecastGridData/$StateAbbr"_"$CountyName".json"
           fi
         done
     - name: Commit and push if it changed
