@@ -30,11 +30,11 @@ jobs:
             long=$( echo $coor | tr '()' ' '| cut -d' ' -f3 )
             lat=$( echo $coor | tr '()' ' '| cut -d' ' -f4 )
             url=$(printf "https://api.weather.gov/points/%.4f,%.4f" "$lat" "$long")
-			      info=$(curl $url -L)
-			      urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
+	    info=$(curl $url -L)
+	    urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
             obs=$(curl $urlobs -L)
-			      station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
-			      curl ${station}"/observations/latest" -L > "${outfile}"
+            station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
+            curl ${station}"/observations/latest" -L > "${outfile}"
           fi
         done
     - name: Commit and push if it changed
