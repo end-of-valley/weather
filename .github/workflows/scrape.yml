@@ -18,6 +18,7 @@ jobs:
       run: |-
         File="PLACES__County_Data__GIS_Friendly_Format___2021_release.csv"
         mkdir -p forecastGridData
+        mkdir -p observations
         cat $File| sed 1d | awk -F'"' -v OFS='' '{ for (i=2; i<=NF; i+=2) gsub(",", "", $i) } 1' |while read line
         do
             TotalPopulation=$( echo $line | cut -d',' -f5 )
@@ -34,6 +35,10 @@ jobs:
             info=$(curl $url -L)
             urldata=$(echo $info | grep -zoP '(?<=forecastGridData\": \").*(?=\",\s\"obs)')
             curl $urldata  -L > "${outfile}"
+            urlobs=$(echo $info | grep -zoP '(?<=observationStations\": \").*(?=\",\s\"rela)')
+            obs=$(curl $urlobs -L)
+            station=$(echo $obs | grep -Po 'observationStations\": \[ "\K[^"]*')
+            curl ${station}"/observations/latest" -L > "${outfile}"
           fi
         done
     - name: Commit and push if it changed
