@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCEW/observations/2022-09-10T20:26:00+00:00",
+    "id": "https://api.weather.gov/stations/KCEW/observations/2022-09-10T21:19:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCEW/observations/2022-09-10T20:26:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCEW/observations/2022-09-10T21:19:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 65
         },
         "station": "https://api.weather.gov/stations/KCEW",
-        "timestamp": "2022-09-10T20:26:00+00:00",
-        "rawMessage": "KCEW 102026Z AUTO 12004KT 10SM SCT025 28/24 A2996 RMK AO2 LTG DSNT SW AND NW T02830244 $",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-10T21:19:00+00:00",
+        "rawMessage": "KCEW 102119Z AUTO VRB05KT 10SM -RA SCT011 BKN029 BKN055 24/23 A2999 RMK AO2 RAB12 P0001 T02440228 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 760
+                    "value": 340
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 880
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "BKN"
             }
         ]
     }
