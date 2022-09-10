@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KADW/observations/2022-09-10T13:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KADW/observations/2022-09-10T15:24:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KADW/observations/2022-09-10T13:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KADW/observations/2022-09-10T15:24:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 86
         },
         "station": "https://api.weather.gov/stations/KADW",
-        "timestamp": "2022-09-10T13:55:00+00:00",
-        "rawMessage": "KADW 101355Z VRB06KT 10SM FEW017 23/16 A3023 RMK SLP242 T02260164 52012 $",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-10T15:24:00+00:00",
+        "rawMessage": "KADW 101524Z AUTO 10005KT 10SM -DZ BKN025 BKN033 23/16 A3023 RMK AO2 DZB24 SLP242 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 520
+                    "value": 760
                 },
-                "amount": "FEW"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1010
+                },
+                "amount": "BKN"
             }
         ]
     }
