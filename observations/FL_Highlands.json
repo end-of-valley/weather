@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOBE/observations/2022-09-12T21:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KOBE/observations/2022-09-12T22:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOBE/observations/2022-09-12T21:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOBE/observations/2022-09-12T22:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 10
         },
         "station": "https://api.weather.gov/stations/KOBE",
-        "timestamp": "2022-09-12T21:15:00+00:00",
-        "rawMessage": "KOBE 122115Z AUTO 14004KT 8SM FEW110 31/27 A2989 RMK AO2 LTG DSNT SE AND W AND NW",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-12T22:15:00+00:00",
+        "rawMessage": "KOBE 122215Z AUTO 33009G27KT 310V010 8SM TS FEW020 BKN033 OVC070 27/25 A2995 RMK AO2 LTG DSNT NW-NE",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 610
                 },
                 "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1010
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "OVC"
             }
         ]
     }
