@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KNIP/observations/2022-09-12T18:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KNIP/observations/2022-09-12T18:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,16 +52,16 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KNIP/observations/2022-09-12T18:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KNIP/observations/2022-09-12T18:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 7
         },
         "station": "https://api.weather.gov/stations/KNIP",
-        "timestamp": "2022-09-12T18:15:00+00:00",
-        "rawMessage": "KNIP 121815Z COR 18011KT 10SM TS BKN042CB BKN060 BKN250 31/24 A2993 RMK AO2 TSB15 OCNL LTGICCG VC SE TS VC SE MOV NE T1 SET T03060239 $",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2022-09-12T18:53:00+00:00",
+        "rawMessage": "KNIP 121853Z 02006KT 6SM -TSRA FEW025 BKN035CB BKN060 BKN250 27/23 A2993 RMK AO2 RAB43 TSB15 SLP132 FRQ LTGICCG OHD TS OHD MOV NE T1 SET P0011 T02670233 $",
+        "textDescription": "Thunderstorms and Rain",
         "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
@@ -69,6 +69,12 @@
                 "modifier": null,
                 "weather": "thunderstorms",
                 "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 9660,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -153,7 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1280
+                    "value": 760
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1070
                 },
                 "amount": "BKN"
             },
