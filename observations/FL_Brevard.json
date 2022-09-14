@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCOF/observations/2022-09-14T22:02:00+00:00",
+    "id": "https://api.weather.gov/stations/KCOF/observations/2022-09-14T23:12:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCOF/observations/2022-09-14T22:02:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCOF/observations/2022-09-14T23:12:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KCOF",
-        "timestamp": "2022-09-14T22:02:00+00:00",
-        "rawMessage": "KCOF 142202Z AUTO 13014KT 10SM -RA FEW100 27/25 A2993 RMK AO2 LTG DSNT E AND S-W RAB02 TSE2156 SLP140 $",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2022-09-14T23:12:00+00:00",
+        "rawMessage": "KCOF 142312Z AUTO 22016KT 1 1/4SM +TSRA OVC007 23/22 A2996 RMK AO2 VIS 3/4V1 1/4 TSE00TSB07 CIG 004 RWY21 SLP150 $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 2010,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,9 +159,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 210
                 },
-                "amount": "FEW"
+                "amount": "OVC"
             }
         ]
     }
