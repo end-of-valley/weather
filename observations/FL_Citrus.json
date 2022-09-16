@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCGC/observations/2022-09-16T19:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KCGC/observations/2022-09-16T20:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCGC/observations/2022-09-16T19:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCGC/observations/2022-09-16T20:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KCGC",
-        "timestamp": "2022-09-16T19:15:00+00:00",
-        "rawMessage": "KCGC 161915Z AUTO 11004KT 10SM SCT039 SCT046 BKN050 31/22 A3002 RMK AO2 LTG DSNT N AND NE",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-16T20:15:00+00:00",
+        "rawMessage": "KCGC 162015Z AUTO 04009KT 10SM TS BKN036 OVC047 26/22 A3002 RMK AO2 LTG DSNT ALQS",
+        "textDescription": "Thunderstorms",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,23 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1190
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1400
-                },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 1100
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1430
+                },
+                "amount": "OVC"
             }
         ]
     }
