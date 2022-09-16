@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KORL/observations/2022-09-16T18:21:00+00:00",
+    "id": "https://api.weather.gov/stations/KORL/observations/2022-09-16T19:06:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KORL/observations/2022-09-16T18:21:00+00:00",
+        "@id": "https://api.weather.gov/stations/KORL/observations/2022-09-16T19:06:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 34
         },
         "station": "https://api.weather.gov/stations/KORL",
-        "timestamp": "2022-09-16T18:21:00+00:00",
-        "rawMessage": "KORL 161821Z 12014KT 10SM VCTS SCT043 SCT055 29/23 A3002 RMK AO2 LTG DSNT SE AND NW T02890228",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-16T19:06:00+00:00",
+        "rawMessage": "KORL 161906Z 07010KT 3SM RA BR FEW032 BKN046 OVC055 25/23 A3004 RMK AO2 LTG DSNT SE AND NW P0009 T02500228",
+        "textDescription": "Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -146,16 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1310
+                    "value": 980
                 },
-                "amount": "SCT"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1400
+                },
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 1680
                 },
-                "amount": "SCT"
+                "amount": "OVC"
             }
         ]
     }
