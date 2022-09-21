@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSUA/observations/2022-09-21T14:40:00+00:00",
+    "id": "https://api.weather.gov/stations/KSUA/observations/2022-09-21T17:23:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSUA/observations/2022-09-21T14:40:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSUA/observations/2022-09-21T17:23:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 6
         },
         "station": "https://api.weather.gov/stations/KSUA",
-        "timestamp": "2022-09-21T14:40:00+00:00",
-        "rawMessage": "KSUA 211440Z 32005KT 10SM SCT018 30/23 A2992 RMK WIND EST.",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-21T17:23:00+00:00",
+        "rawMessage": "KSUA 211723Z 32010KT 4SM TSRA SCT012 BKN021 29/22 A2990 RMK TSB1723 OCNLLTGICCG S-N TS MOV UNKNWN. WIND EST.",
+        "textDescription": "Light Thunderstorms and Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "-TS"
+            },
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +159,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 550
+                    "value": 370
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 640
+                },
+                "amount": "BKN"
             }
         ]
     }
