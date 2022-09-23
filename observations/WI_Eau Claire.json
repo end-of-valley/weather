@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEAU/observations/2022-09-23T17:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KEAU/observations/2022-09-23T18:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEAU/observations/2022-09-23T17:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEAU/observations/2022-09-23T18:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 276
         },
         "station": "https://api.weather.gov/stations/KEAU",
-        "timestamp": "2022-09-23T17:56:00+00:00",
-        "rawMessage": "KEAU 231756Z 18010KT 10SM OVC060 13/07 A3013 RMK AO2 SLP206 T01330072 10156 20072 58012",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-23T18:56:00+00:00",
+        "rawMessage": "KEAU 231856Z 17009KT 7SM -RA SCT060 BKN080 OVC090 12/09 A3009 RMK AO2 RAB30 SLP194 P0002 T01220089",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -147,6 +154,20 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 1830
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2440
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
                 },
                 "amount": "OVC"
             }
