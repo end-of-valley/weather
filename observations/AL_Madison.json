@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMDQ/observations/2022-09-25T15:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMDQ/observations/2022-09-25T15:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMDQ/observations/2022-09-25T15:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMDQ/observations/2022-09-25T15:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 230
         },
         "station": "https://api.weather.gov/stations/KMDQ",
-        "timestamp": "2022-09-25T15:15:00+00:00",
-        "rawMessage": "KMDQ 251515Z AUTO 16008KT 10SM -RA BKN120 20/19 A2997 RMK A02 LTG DSNT E THRU SW P0004 T01970189",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2022-09-25T15:35:00+00:00",
+        "rawMessage": "KMDQ 251535Z AUTO 18007KT 10SM -TSRA BKN022 BKN050 BKN120 20/19 A2998 RMK A02 LTG DSNT E THRU SW P0006 T02010192",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
             }
         ],
         "temperature": {
@@ -150,6 +156,20 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 670
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
+                },
+                "amount": "BKN"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
