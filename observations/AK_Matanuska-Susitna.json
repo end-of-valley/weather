@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PATK/observations/2022-09-25T10:53:00+00:00",
+    "id": "https://api.weather.gov/stations/PATK/observations/2022-09-25T13:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,25 +52,18 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PATK/observations/2022-09-25T10:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/PATK/observations/2022-09-25T13:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 109
         },
         "station": "https://api.weather.gov/stations/PATK",
-        "timestamp": "2022-09-25T10:53:00+00:00",
-        "rawMessage": "PATK 251053Z AUTO 00000KT 10SM -RA OVC037 06/04 A2972 RMK AO2 SLP068 P0002 T00610044 TSNO",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
-        "presentWeather": [
-            {
-                "intensity": "light",
-                "modifier": null,
-                "weather": "rain",
-                "rawString": "-RA"
-            }
-        ],
+        "timestamp": "2022-09-25T13:30:00+00:00",
+        "rawMessage": "PATK 251330Z AUTO 00000KT 10SM SCT010 BKN019 OVC041 06/04 A2976 RMK AO2 RAE07 P0000 T00610044 TSNO",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
+        "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 6.0999999999999996,
@@ -98,13 +91,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100640,
+            "value": 100780,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100680,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -153,7 +146,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1130
+                    "value": 300
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1250
                 },
                 "amount": "OVC"
             }
