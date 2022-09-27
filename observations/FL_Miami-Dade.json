@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KTMB/observations/2022-09-27T06:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KTMB/observations/2022-09-27T07:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KTMB/observations/2022-09-27T06:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KTMB/observations/2022-09-27T07:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KTMB",
-        "timestamp": "2022-09-27T06:53:00+00:00",
-        "rawMessage": "KTMB 270653Z 06005KT 10SM FEW080 25/24 A2984 RMK AO2 RAE02B19E39 SLP104 P0001 T02500244",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-09-27T07:53:00+00:00",
+        "rawMessage": "KTMB 270753Z 07005KT 10SM -RA FEW090 SCT110 25/24 A2983 RMK AO2 RAB14 SLP102 P0001 T02500244",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 25,
@@ -76,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 60,
+            "value": 70,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,12 +98,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101050,
+            "value": 101020,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101040,
+            "value": 101020,
             "qualityControl": "V"
         },
         "visibility": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 2740
                 },
                 "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "SCT"
             }
         ]
     }
