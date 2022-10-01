@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHWV/observations/2022-10-01T05:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHWV/observations/2022-10-01T06:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHWV/observations/2022-10-01T05:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHWV/observations/2022-10-01T06:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 25
         },
         "station": "https://api.weather.gov/stations/KHWV",
-        "timestamp": "2022-10-01T05:56:00+00:00",
-        "rawMessage": "KHWV 010556Z AUTO VRB03KT 10SM CLR 14/10 A3010 RMK AO2 SLP193 60000 T01440100 10144 20139 57022",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-01T06:56:00+00:00",
+        "rawMessage": "KHWV 010656Z AUTO 36004KT 10SM -RA OVC038 14/10 A3012 RMK AO2 RAB53 SLP198 P0000 T01440100",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -124,8 +131,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:m",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1160
                 },
-                "amount": "CLR"
+                "amount": "OVC"
             }
         ]
     }
