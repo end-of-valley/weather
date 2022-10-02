@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLVN/observations/2022-10-02T09:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KLVN/observations/2022-10-02T10:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLVN/observations/2022-10-02T09:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLVN/observations/2022-10-02T10:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 292
         },
         "station": "https://api.weather.gov/stations/KLVN",
-        "timestamp": "2022-10-02T09:15:00+00:00",
-        "rawMessage": "KLVN 020915Z AUTO 00000KT 10SM CLR 11/09 A3033 RMK AO2",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-02T10:15:00+00:00",
+        "rawMessage": "KLVN 021015Z AUTO 00000KT 10SM -RA SCT080 SCT110 11/10 A3035 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 2440
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "SCT"
             }
         ]
     }
