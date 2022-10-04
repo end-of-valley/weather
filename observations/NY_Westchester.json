@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHPN/observations/2022-10-04T04:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHPN/observations/2022-10-04T07:22:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHPN/observations/2022-10-04T04:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHPN/observations/2022-10-04T07:22:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 134
         },
         "station": "https://api.weather.gov/stations/KHPN",
-        "timestamp": "2022-10-04T04:56:00+00:00",
-        "rawMessage": "KHPN 040456Z AUTO 36009G17KT 9SM -RA OVC055 08/04 A3009 RMK AO2 RAB03 SLP191 P0000 T00830044 401110083 $",
-        "textDescription": "Light Rain",
+        "timestamp": "2022-10-04T07:22:00+00:00",
+        "rawMessage": "KHPN 040722Z AUTO 36010KT 2 1/2SM RA BR BKN026 OVC034 08/06 A3005 RMK AO2 T00780056 PNO $",
+        "textDescription": "Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -93,8 +99,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 31.68,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -153,7 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1680
+                    "value": 790
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1040
                 },
                 "amount": "OVC"
             }
