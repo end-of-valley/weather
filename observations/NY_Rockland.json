@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHPN/observations/2022-10-05T02:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHPN/observations/2022-10-05T05:27:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHPN/observations/2022-10-05T02:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHPN/observations/2022-10-05T05:27:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 134
         },
         "station": "https://api.weather.gov/stations/KHPN",
-        "timestamp": "2022-10-05T02:56:00+00:00",
-        "rawMessage": "KHPN 050256Z 02010KT 6SM BR FEW010 OVC020 12/11 A2992",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-10-05T05:27:00+00:00",
+        "rawMessage": "KHPN 050527Z 03006KT 1 1/2SM -TSRA OVC010 12/11 A2991 RMK OCNL LTGICCCG TS OHD MOV E",
+        "textDescription": "Light Thunderstorms and Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
-                "weather": "fog_mist",
-                "rawString": "BR"
+                "weather": "thunderstorms",
+                "rawString": "-TS"
+            },
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 2410,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -154,13 +160,6 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 300
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 610
                 },
                 "amount": "OVC"
             }
