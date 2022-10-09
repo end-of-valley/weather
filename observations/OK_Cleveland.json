@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOUN/observations/2022-10-09T06:10:00+00:00",
+    "id": "https://api.weather.gov/stations/KOUN/observations/2022-10-09T06:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOUN/observations/2022-10-09T06:10:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOUN/observations/2022-10-09T06:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 362
         },
         "station": "https://api.weather.gov/stations/KOUN",
-        "timestamp": "2022-10-09T06:10:00+00:00",
-        "rawMessage": "KOUN 090610Z AUTO 30003KT 10SM SCT060 SCT070 BKN100 14/08 A3029 RMK AO2 T01410083",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-09T06:30:00+00:00",
+        "rawMessage": "KOUN 090630Z AUTO 29007KT 10SM -RA SCT060 SCT070 OVC100 14/10 A3030 RMK AO2 P0001 T01350096",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -162,7 +169,7 @@
                     "unitCode": "wmoUnit:m",
                     "value": 3050
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
