@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSVN/observations/2022-10-12T22:09:00+00:00",
+    "id": "https://api.weather.gov/stations/KSVN/observations/2022-10-12T22:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSVN/observations/2022-10-12T22:09:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSVN/observations/2022-10-12T22:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 13
         },
         "station": "https://api.weather.gov/stations/KSVN",
-        "timestamp": "2022-10-12T22:09:00+00:00",
-        "rawMessage": "KSVN 122209Z 09006KT 10SM CLR 23/22 A2999 RMK AO2A RAE2158DZB2158E09 SLP159 $",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-12T22:55:00+00:00",
+        "rawMessage": "KSVN 122255Z 09004KT 10SM -RA BKN025 23/21 A2998 RMK AO2A RAE2158DZB2158E09RAB30E40RAB51 SLP155 P0000 T02290213 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 760
                 },
-                "amount": "CLR"
+                "amount": "BKN"
             }
         ]
     }
