@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHWV/observations/2022-10-13T14:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHWV/observations/2022-10-13T15:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHWV/observations/2022-10-13T14:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHWV/observations/2022-10-13T15:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 25
         },
         "station": "https://api.weather.gov/stations/KHWV",
-        "timestamp": "2022-10-13T14:56:00+00:00",
-        "rawMessage": "KHWV 131456Z AUTO 15014KT 10SM CLR 21/16 A2994 RMK AO2 SLP139 T02060161 58007",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-13T15:56:00+00:00",
+        "rawMessage": "KHWV 131556Z AUTO 14015KT 10SM -RA FEW050 23/16 A2992 RMK AO2 PK WND 14029/1507 RAB08 SLP132 P0000 T02280161",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1520
                 },
-                "amount": "CLR"
+                "amount": "FEW"
             }
         ]
     }
