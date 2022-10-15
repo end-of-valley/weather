@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFPK/observations/2022-10-15T03:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KFPK/observations/2022-10-15T05:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFPK/observations/2022-10-15T03:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFPK/observations/2022-10-15T05:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 272
         },
         "station": "https://api.weather.gov/stations/KFPK",
-        "timestamp": "2022-10-15T03:15:00+00:00",
-        "rawMessage": "KFPK 150315Z AUTO 23004KT 10SM CLR 09/M03 A2964 RMK AO2 T00911035",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-15T05:15:00+00:00",
+        "rawMessage": "KFPK 150515Z AUTO 23005KT 10SM DZ SCT033 OVC043 08/04 A2964 RMK AO2 T00770040",
+        "textDescription": "Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1010
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1310
+                },
+                "amount": "OVC"
             }
         ]
     }
