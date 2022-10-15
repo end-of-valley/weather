@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KAPF/observations/2022-10-15T20:00:00+00:00",
+    "id": "https://api.weather.gov/stations/KAPF/observations/2022-10-15T20:13:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,16 +52,16 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KAPF/observations/2022-10-15T20:00:00+00:00",
+        "@id": "https://api.weather.gov/stations/KAPF/observations/2022-10-15T20:13:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KAPF",
-        "timestamp": "2022-10-15T20:00:00+00:00",
-        "rawMessage": "KAPF 152000Z TS A2998 RMK AO2 LTG DSNT SE AND S $",
-        "textDescription": "Thunderstorms",
+        "timestamp": "2022-10-15T20:13:00+00:00",
+        "rawMessage": "KAPF 152013Z 20015KT 1/2SM TS FG BKN030 A2999 RMK AO2 LTG DSNT SE AND S TSE03B07 $",
+        "textDescription": "Thunderstorms and Fog",
         "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
         "presentWeather": [
             {
@@ -69,6 +69,12 @@
                 "modifier": null,
                 "weather": "thunderstorms",
                 "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
             }
         ],
         "temperature": {
@@ -108,8 +114,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 800,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -149,6 +155,14 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "BKN"
+            }
+        ]
     }
 }
