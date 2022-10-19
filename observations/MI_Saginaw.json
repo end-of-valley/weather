@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHYX/observations/2022-10-19T12:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KHYX/observations/2022-10-19T13:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHYX/observations/2022-10-19T12:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHYX/observations/2022-10-19T13:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 183
         },
         "station": "https://api.weather.gov/stations/KHYX",
-        "timestamp": "2022-10-19T12:15:00+00:00",
-        "rawMessage": "KHYX 191215Z AUTO 29010G16KT 10SM RA BKN014 OVC019 04/02 A2976 RMK AO2 T00350020",
-        "textDescription": "Rain",
+        "timestamp": "2022-10-19T13:15:00+00:00",
+        "rawMessage": "KHYX 191315Z AUTO 30010KT 10SM -DZ SCT012 BKN020 BKN028 04/02 A2978 RMK AO2 T00370020",
+        "textDescription": "Light Drizzle",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "RA"
+                "weather": "drizzle",
+                "rawString": "-DZ"
             }
         ],
         "temperature": {
@@ -93,8 +93,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 29.52,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -153,16 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 430
+                    "value": 370
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 580
+                    "value": 850
                 },
-                "amount": "OVC"
+                "amount": "BKN"
             }
         ]
     }
