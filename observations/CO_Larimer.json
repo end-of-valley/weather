@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFNL/observations/2022-10-23T20:25:00+00:00",
+    "id": "https://api.weather.gov/stations/KFNL/observations/2022-10-23T20:44:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFNL/observations/2022-10-23T20:25:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFNL/observations/2022-10-23T20:44:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 1529
         },
         "station": "https://api.weather.gov/stations/KFNL",
-        "timestamp": "2022-10-23T20:25:00+00:00",
-        "rawMessage": "KFNL 232025Z 15007KT 10SM 17/01 A2932 RMK AO2 LTG DSNT SE",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-10-23T20:44:00+00:00",
+        "rawMessage": "KFNL 232044Z VRB05KT 10SM -TSRA BKN075 OVC110 17/02 A2932 RMK AO2 LTG DSNT SE TSB38RAB36",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/day/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -142,6 +155,21 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2290
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
