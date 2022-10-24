@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KMIV",
         "timestamp": "2022-10-24T09:38:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KMIV 240938Z AUTO 02007KT 10SM -RA OVC004 13/13 A3010 RMK AO2 RAB03E13B31 P0000 T01330128 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 13.300000000000001,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 120
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
