@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFRG/observations/2022-10-24T09:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KFRG/observations/2022-10-24T10:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFRG/observations/2022-10-24T09:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFRG/observations/2022-10-24T10:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 25
         },
         "station": "https://api.weather.gov/stations/KFRG",
-        "timestamp": "2022-10-24T09:53:00+00:00",
-        "rawMessage": "KFRG 240953Z AUTO 04012KT 7SM OVC004 13/12 A3016 RMK AO2 RAB0859E17 SLP213 P0000 T01280117 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-24T10:53:00+00:00",
+        "rawMessage": "KFRG 241053Z AUTO 04011KT 3SM +RA BR OVC004 13/12 A3016 RMK AO2 RAB47 SLP214 P0005 T01280117 $",
+        "textDescription": "Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 12.800000000000001,
@@ -76,13 +89,13 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 40,
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 20.52,
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -96,12 +109,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102130,
+            "value": 102140,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
