@@ -61,9 +61,17 @@
         "station": "https://api.weather.gov/stations/KSUA",
         "timestamp": "2022-10-24T16:47:00+00:00",
         "rawMessage": "KSUA 241647Z 32004KT 7SM VCSH BKN030 24/20 A3010",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": " Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain_showers?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "showers",
+                "weather": "rain",
+                "rawString": "VCSH",
+                "inVicinity": true
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 24,
@@ -142,6 +150,14 @@
             "value": 24.50146796110111,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "BKN"
+            }
+        ]
     }
 }
