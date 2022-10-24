@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KIXD/observations/2022-10-24T19:02:00+00:00",
+    "id": "https://api.weather.gov/stations/KIXD/observations/2022-10-24T20:07:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KIXD/observations/2022-10-24T19:02:00+00:00",
+        "@id": "https://api.weather.gov/stations/KIXD/observations/2022-10-24T20:07:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 331
         },
         "station": "https://api.weather.gov/stations/KIXD",
-        "timestamp": "2022-10-24T19:02:00+00:00",
-        "rawMessage": "KIXD 241902Z 33011KT 3SM -RA OVC007 11/ A2975 RMK AO2 CIG 004V010 P0001 T0106 $",
-        "textDescription": "Light Rain",
+        "timestamp": "2022-10-24T20:07:00+00:00",
+        "rawMessage": "KIXD 242007Z 36010KT 3SM RA BR BKN007 OVC070 11/09 A2972 RMK AO2 P0002 T01060089 $",
+        "textDescription": "Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -154,6 +160,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 210
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
                 },
                 "amount": "OVC"
             }
