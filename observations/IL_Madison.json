@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KALN/observations/2022-10-25T08:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KALN/observations/2022-10-25T08:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KALN/observations/2022-10-25T08:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KALN/observations/2022-10-25T08:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 166
         },
         "station": "https://api.weather.gov/stations/KALN",
-        "timestamp": "2022-10-25T08:15:00+00:00",
-        "rawMessage": "KALN 250815Z AUTO 00000KT 3SM +DZ OVC036 15/15 A2974 RMK AO2 P0001 T01530151",
-        "textDescription": "Heavy Drizzle",
+        "timestamp": "2022-10-25T08:55:00+00:00",
+        "rawMessage": "KALN 250855Z AUTO 08003KT 3SM +RA SCT020 BKN033 OVC039 15/15 A2973 RMK AO2 P0014 60024 T01520150",
+        "textDescription": "Heavy Rain",
         "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
                 "intensity": "heavy",
                 "modifier": null,
-                "weather": "drizzle",
-                "rawString": "+DZ"
+                "weather": "rain",
+                "rawString": "+RA"
             }
         ],
         "temperature": {
@@ -126,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0.01,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:m",
@@ -153,7 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1100
+                    "value": 610
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1010
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1190
                 },
                 "amount": "OVC"
             }
