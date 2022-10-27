@@ -61,9 +61,22 @@
         "station": "https://api.weather.gov/stations/KDEN",
         "timestamp": "2022-10-27T15:53:00+00:00",
         "rawMessage": "KDEN 271553Z 33015KT 1 1/2SM -SN BR OVC003 01/01 A3001 RMK AO2 SFC VIS 4 SLP159 P0001 T00110006",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 1.1000000000000001,
@@ -142,6 +155,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 90
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
