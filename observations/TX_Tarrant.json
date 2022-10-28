@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KNFW/observations/2022-10-28T22:30:00+00:00",
+    "id": "https://api.weather.gov/stations/KNFW/observations/2022-10-28T22:59:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KNFW/observations/2022-10-28T22:30:00+00:00",
+        "@id": "https://api.weather.gov/stations/KNFW/observations/2022-10-28T22:59:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 198
         },
         "station": "https://api.weather.gov/stations/KNFW",
-        "timestamp": "2022-10-28T22:30:00+00:00",
-        "rawMessage": "KNFW 282230Z 35010KT 3SM -RA FEW009 BKN013 OVC020 14/12 A3010 RMK AO2 VIS 2 S P0005 T01440117 $",
-        "textDescription": "Light Rain",
+        "timestamp": "2022-10-28T22:59:00+00:00",
+        "rawMessage": "KNFW 282259Z 35010KT 1 1/2SM VCTS +RA BR BKN010CB OVC015 13/12 A3011 RMK AO2 OCNL LTGICCCCA VC E TS 7E MOV E P0009 T01330122 $",
+        "textDescription": "Heavy Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 2410,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,21 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 300
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 460
                 },
                 "amount": "OVC"
             }
