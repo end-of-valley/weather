@@ -61,8 +61,8 @@
         "station": "https://api.weather.gov/stations/KCOE",
         "timestamp": "2022-10-28T19:56:00+00:00",
         "rawMessage": "KCOE 281956Z AUTO 17007KT 10SM SCT048 OVC060 11/M01 A3011 RMK AO2 SLP221 T01111006 PNO $",
-        "textDescription": "",
-        "icon": null,
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -142,6 +142,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
