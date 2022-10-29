@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KALB/observations/2022-10-29T06:51:00+00:00",
+    "id": "https://api.weather.gov/stations/KALB/observations/2022-10-29T08:01:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KALB/observations/2022-10-29T06:51:00+00:00",
+        "@id": "https://api.weather.gov/stations/KALB/observations/2022-10-29T08:01:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 87
         },
         "station": "https://api.weather.gov/stations/KALB",
-        "timestamp": "2022-10-29T06:51:00+00:00",
-        "rawMessage": "KALB 290651Z 00000KT 10SM SCT180 BKN220 01/M01 A3052 RMK AO2 SLP337 T00111006",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-29T08:01:00+00:00",
+        "rawMessage": "KALB 290801Z 00000KT 10SM BCFG FEW007 FEW160 SCT210 01/M01 A3051 RMK AO2 BCFG N AND SW-NW T00111006",
+        "textDescription": "Patchy Fog",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "patches",
+                "weather": "fog",
+                "rawString": "BCFG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 1.1000000000000001,
@@ -91,13 +98,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 103350,
+            "value": 103320,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 103370,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -146,16 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 5490
+                    "value": 210
                 },
-                "amount": "SCT"
+                "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 6710
+                    "value": 4880
                 },
-                "amount": "BKN"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 6400
+                },
+                "amount": "SCT"
             }
         ]
     }
