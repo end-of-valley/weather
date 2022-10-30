@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHHI/observations/2022-10-30T06:55:00+00:00",
+    "id": "https://api.weather.gov/stations/PHHI/observations/2022-10-30T07:14:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHHI/observations/2022-10-30T06:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHHI/observations/2022-10-30T07:14:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 255
         },
         "station": "https://api.weather.gov/stations/PHHI",
-        "timestamp": "2022-10-30T06:55:00+00:00",
-        "rawMessage": "PHHI 300655Z AUTO 00000KT 10SM SCT045 22/17 A3008 RMK AO2 DZB06E08RAB08E21DZB21E23DZB24E25RAB26E37DZB37E39 SLP177 P0002 T02170171 $",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-30T07:14:00+00:00",
+        "rawMessage": "PHHI 300714Z AUTO 00000KT 10SM -DZ FEW044 SCT055 22/17 A3009 RMK AO2 DZB14 SLP180 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:m",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1370
+                    "value": 1340
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
                 },
                 "amount": "SCT"
             }
