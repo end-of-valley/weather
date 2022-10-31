@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHSF/observations/2022-10-31T21:58:00+00:00",
+    "id": "https://api.weather.gov/stations/PHSF/observations/2022-10-31T23:24:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHSF/observations/2022-10-31T21:58:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHSF/observations/2022-10-31T23:24:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 1887
         },
         "station": "https://api.weather.gov/stations/PHSF",
-        "timestamp": "2022-10-31T21:58:00+00:00",
-        "rawMessage": "PHSF 312158Z AUTO 14006KT 9SM CLR 21/10 A3033 RMK AO2 SLP153 T02130101 $",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-10-31T23:24:00+00:00",
+        "rawMessage": "PHSF 312324Z AUTO 19010KT 2 1/4SM +RA FEW020 SCT025 BKN036 18/14 A3031 RMK AO2 VIS 2 1/4V8 RAB19 SLP155 $",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 3620,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 610
                 },
-                "amount": "CLR"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 760
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1100
+                },
+                "amount": "BKN"
             }
         ]
     }
