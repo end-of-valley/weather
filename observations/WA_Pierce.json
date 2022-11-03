@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPLU/observations/2022-11-03T19:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KPLU/observations/2022-11-03T19:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,26 +52,33 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPLU/observations/2022-11-03T19:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPLU/observations/2022-11-03T19:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 164
         },
         "station": "https://api.weather.gov/stations/KPLU",
-        "timestamp": "2022-11-03T19:35:00+00:00",
-        "rawMessage": "KPLU 031935Z AUTO 00000KT BKN035 08/04 A3021 RMK AO2",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-03T19:55:00+00:00",
+        "rawMessage": "KPLU 031955Z AUTO 00000KT 5SM -DZ SCT029 BKN034 BKN042 07/05 A3021 RMK AO2",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 8,
+            "value": 7,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 4,
+            "value": 5,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -101,8 +108,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 8050,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 75.859700794654003,
+            "value": 87.098056588182004,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,7 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 880
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1040
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
                 },
                 "amount": "BKN"
             }
