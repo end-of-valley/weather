@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEZF/observations/2022-11-06T10:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KEZF/observations/2022-11-06T10:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,37 +52,44 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEZF/observations/2022-11-06T10:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEZF/observations/2022-11-06T10:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 26
         },
         "station": "https://api.weather.gov/stations/KEZF",
-        "timestamp": "2022-11-06T10:35:00+00:00",
-        "rawMessage": "KEZF 061035Z AUTO 19005KT 10SM SCT065 SCT090 SCT110 20/17 A3015 RMK AO2 T02000170",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-06T10:55:00+00:00",
+        "rawMessage": "KEZF 061055Z AUTO 19005KT 10SM -RA SCT026 SCT065 BKN120 20/17 A3016 RMK AO2 T01970173",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 20,
-            "qualityControl": "S"
+            "value": 19.699999999999999,
+            "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 17,
-            "qualityControl": "S"
+            "value": 17.300000000000001,
+            "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
             "value": 190,
-            "qualityControl": "S"
+            "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
             "value": 9.3599999999999994,
-            "qualityControl": "S"
+            "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,8 +98,8 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102100,
-            "qualityControl": "S"
+            "value": 102130,
+            "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -129,20 +136,27 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 82.871929790444995,
-            "qualityControl": "S"
+            "value": 86.045217094658994,
+            "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "S"
+            "qualityControl": "V"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "S"
+            "qualityControl": "V"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 790
+                },
+                "amount": "SCT"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
@@ -153,16 +167,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2740
+                    "value": 3660
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 3350
-                },
-                "amount": "SCT"
+                "amount": "BKN"
             }
         ]
     }
