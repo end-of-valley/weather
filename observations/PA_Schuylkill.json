@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMUI/observations/2022-11-06T20:26:00+00:00",
+    "id": "https://api.weather.gov/stations/KMUI/observations/2022-11-06T21:14:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMUI/observations/2022-11-06T20:26:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMUI/observations/2022-11-06T21:14:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 149
         },
         "station": "https://api.weather.gov/stations/KMUI",
-        "timestamp": "2022-11-06T20:26:00+00:00",
-        "rawMessage": "KMUI 062026Z AUTO / 10SM BKN020 OVC025 21/18 A3012 RMK AO2 DZB06E16RAB16E26 SLP201 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-06T21:14:00+00:00",
+        "rawMessage": "KMUI 062114Z AUTO / 10SM -DZ SCT028 BKN036 BKN047 BKN085 21/18 A3011 RMK AO2 DZB14 SLP197 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 21,
@@ -91,12 +98,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102000,
+            "value": 101970,
             "qualityControl": "S"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102010,
+            "value": 101970,
             "qualityControl": "S"
         },
         "visibility": {
@@ -146,16 +153,30 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 850
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1100
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 760
+                    "value": 1430
                 },
-                "amount": "OVC"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2590
+                },
+                "amount": "BKN"
             }
         ]
     }
