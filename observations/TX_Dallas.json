@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRBD/observations/2022-11-07T19:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KRBD/observations/2022-11-07T19:22:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRBD/observations/2022-11-07T19:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRBD/observations/2022-11-07T19:22:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 201
         },
         "station": "https://api.weather.gov/stations/KRBD",
-        "timestamp": "2022-11-07T19:15:00+00:00",
-        "rawMessage": "KRBD 071915Z 14011G16KT 10SM -RA BKN015 BKN025 OVC060 23/21 A3015 RMK AO2 RAB15 P0000 T02280211",
-        "textDescription": "Light Rain",
+        "timestamp": "2022-11-07T19:22:00+00:00",
+        "rawMessage": "KRBD 071922Z 18012KT 2 1/2SM +RA BR FEW009 BKN016 OVC040 22/22 A3015 RMK AO2 RAB15 P0003 T02220217",
+        "textDescription": "Heavy Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,21 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 270
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 490
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 760
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1830
+                    "value": 1220
                 },
                 "amount": "OVC"
             }
