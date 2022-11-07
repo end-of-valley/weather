@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDAW/observations/2022-11-07T05:51:00+00:00",
+    "id": "https://api.weather.gov/stations/KDAW/observations/2022-11-07T06:51:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,17 +52,17 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDAW/observations/2022-11-07T05:51:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDAW/observations/2022-11-07T06:51:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 98
         },
         "station": "https://api.weather.gov/stations/KDAW",
-        "timestamp": "2022-11-07T05:51:00+00:00",
-        "rawMessage": "KDAW 070551Z AUTO 18005KT 10SM CLR 19/16 A3006 RMK AO2 SLP175 60000 T01940161 10228 20194 58015",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
+        "timestamp": "2022-11-07T06:51:00+00:00",
+        "rawMessage": "KDAW 070651Z AUTO VRB05KT 10SM SCT100 OVC110 19/16 A3006 RMK AO2 SLP175 T01940161",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -76,8 +76,8 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 180,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
@@ -124,8 +124,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:m",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -146,9 +146,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 3050
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3350
+                },
+                "amount": "OVC"
             }
         ]
     }
