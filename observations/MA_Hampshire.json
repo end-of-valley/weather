@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T18:40:00+00:00",
+    "id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T18:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T18:40:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T18:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 75
         },
         "station": "https://api.weather.gov/stations/KCEF",
-        "timestamp": "2022-11-11T18:40:00+00:00",
-        "rawMessage": "KCEF 111840Z 17005KT 6SM BKN005 BKN010 OVC027 17/16 A2996 RMK AO2A SLP151",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-11T18:55:00+00:00",
+        "rawMessage": "KCEF 111855Z 00000KT 5SM -RA BR SCT005 OVC009 17/16 A2995 RMK AO2A SLP148 T01650163",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -148,19 +161,12 @@
                     "unitCode": "wmoUnit:m",
                     "value": 150
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 300
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 820
+                    "value": 270
                 },
                 "amount": "OVC"
             }
