@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T10:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T11:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,26 +52,33 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T10:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCEF/observations/2022-11-11T11:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 75
         },
         "station": "https://api.weather.gov/stations/KCEF",
-        "timestamp": "2022-11-11T10:55:00+00:00",
-        "rawMessage": "KCEF 111055Z AUTO 00000KT 10SM BKN055 07/07 A3011 RMK AO2 SLP203 T00670066",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-11T11:55:00+00:00",
+        "rawMessage": "KCEF 111155Z 00000KT 10SM BCFG FEW001 FEW008 SCT055 BKN250 07/07 A3011 RMK AO2A SLP203 T00690068 10113 20064 56006",
+        "textDescription": "Patchy Fog",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "patches",
+                "weather": "fog",
+                "rawString": "BCFG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.7000000000000002,
+            "value": 6.9000000000000004,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.5999999999999996,
+            "value": 6.7999999999999998,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 99.315279249840003,
+            "value": 99.316371093254006,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,7 +153,28 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 30
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 240
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 1680
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 7620
                 },
                 "amount": "BKN"
             }
