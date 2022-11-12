@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEWN/observations/2022-11-12T00:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KEWN/observations/2022-11-12T01:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEWN/observations/2022-11-12T00:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEWN/observations/2022-11-12T01:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 6
         },
         "station": "https://api.weather.gov/stations/KEWN",
-        "timestamp": "2022-11-12T00:54:00+00:00",
-        "rawMessage": "KEWN 120054Z 19012G24KT 10SM SCT026 BKN031 BKN039 24/22 A2975 RMK AO2 RAB16E26 SLP075 P0001 T02390217",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-12T01:54:00+00:00",
+        "rawMessage": "KEWN 120154Z 20011G20KT 10SM -RA FEW025 SCT040 BKN060 24/21 A2975 RMK AO2 RAB48 SLP073 P0000 T02390211",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 23.899999999999999,
@@ -71,23 +78,23 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": 21.699999999999999,
+            "value": 21.100000000000001,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 190,
+            "value": 200,
             "qualityControl": "V"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 22.32,
+            "value": 20.52,
             "qualityControl": "V"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 37.079999999999998,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -96,7 +103,7 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100750,
+            "value": 100730,
             "qualityControl": "V"
         },
         "visibility": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 87.515784017393997,
+            "value": 84.357623491957995,
             "qualityControl": "V"
         },
         "windChill": {
@@ -139,28 +146,28 @@
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
-            "value": 24.630689916009999,
+            "value": 24.548226835623332,
             "qualityControl": "V"
         },
         "cloudLayers": [
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 790
+                    "value": 760
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1220
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 940
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1190
+                    "value": 1830
                 },
                 "amount": "BKN"
             }
