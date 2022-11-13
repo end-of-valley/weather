@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCVG/observations/2022-11-13T02:31:00+00:00",
+    "id": "https://api.weather.gov/stations/KCVG/observations/2022-11-13T02:52:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCVG/observations/2022-11-13T02:31:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCVG/observations/2022-11-13T02:52:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 267
         },
         "station": "https://api.weather.gov/stations/KCVG",
-        "timestamp": "2022-11-13T02:31:00+00:00",
-        "rawMessage": "KCVG 130231Z 24007KT 4SM BR BKN009 OVC014 M01/M01 A3011 RMK AO2 FZRAB09E25 P0000 I1001 T10061011",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-11-13T02:52:00+00:00",
+        "rawMessage": "KCVG 130252Z 25007KT 4SM -FZDZ BR OVC008 M01/M01 A3011 RMK AO2 SLP204 FZDZB44 P0000 60000 I1002 I3002 T10061011 51005 $",
+        "textDescription": "Light Freezing Drizzle and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "freezing",
+                "weather": "drizzle",
+                "rawString": "-FZDZ"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -83,7 +89,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 240,
+            "value": 250,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -103,8 +109,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 102040,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:m",
@@ -153,14 +159,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 270
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 430
+                    "value": 240
                 },
                 "amount": "OVC"
             }
