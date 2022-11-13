@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHHI/observations/2022-11-13T11:55:00+00:00",
+    "id": "https://api.weather.gov/stations/PHHI/observations/2022-11-13T12:42:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHHI/observations/2022-11-13T11:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHHI/observations/2022-11-13T12:42:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 255
         },
         "station": "https://api.weather.gov/stations/PHHI",
-        "timestamp": "2022-11-13T11:55:00+00:00",
-        "rawMessage": "PHHI 131155Z AUTO 32005KT 10SM CLR 20/15 A3002 RMK AO2 SLP156 60000 70002 T01950147 10210 20195 56006 $",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-13T12:42:00+00:00",
+        "rawMessage": "PHHI 131242Z AUTO 32004KT 10SM -DZ FEW011 FEW042 BKN055 19/15 A3001 RMK AO2 DZB42 SLP153 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -124,8 +131,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:m",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 340
                 },
-                "amount": "CLR"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1680
+                },
+                "amount": "BKN"
             }
         ]
     }
