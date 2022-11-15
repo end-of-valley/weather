@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJST/observations/2022-11-15T22:21:00+00:00",
+    "id": "https://api.weather.gov/stations/KJST/observations/2022-11-15T22:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJST/observations/2022-11-15T22:21:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJST/observations/2022-11-15T22:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 696
         },
         "station": "https://api.weather.gov/stations/KJST",
-        "timestamp": "2022-11-15T22:21:00+00:00",
-        "rawMessage": "KJST 152221Z AUTO 15008G15KT SN BKN009 OVC020 M01/M02 A3011 RMK AO2 P0002 T10111017 $",
-        "textDescription": "Snow",
+        "timestamp": "2022-11-15T22:30:00+00:00",
+        "rawMessage": "KJST 152230Z AUTO 16010KT 1 1/2SM -SN BR BKN009 OVC021 M01/M02 A3011 RMK AO2 P0003 T10111017 $",
+        "textDescription": "Light Snow and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
                 "weather": "snow",
-                "rawString": "SN"
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,8 +114,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 2410,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -160,7 +166,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 640
                 },
                 "amount": "OVC"
             }
