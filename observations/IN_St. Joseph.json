@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSBN/observations/2022-11-19T22:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KSBN/observations/2022-11-19T22:29:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,29 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSBN/observations/2022-11-19T22:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSBN/observations/2022-11-19T22:29:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 236
         },
         "station": "https://api.weather.gov/stations/KSBN",
-        "timestamp": "2022-11-19T22:05:00+00:00",
-        "rawMessage": "KSBN 192205Z 25019G31KT 1/4SM R27L/3000V5500FT SN FZFG VV016 M05/M07 A3001 RMK AO2 PK WND 25031/2203 P0000 T10501067",
-        "textDescription": "Snow and Fog",
-        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "timestamp": "2022-11-19T22:29:00+00:00",
+        "rawMessage": "KSBN 192229Z 25013KT 3SM -SN BR BKN026 BKN044 OVC065 M05/M07 A3003 RMK AO2 PK WND 25031/2203 P0000 T10501072",
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
                 "weather": "snow",
-                "rawString": "SN"
+                "rawString": "-SN"
             },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "fog",
-                "rawString": "FG"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -99,8 +99,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 57.600000000000001,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -114,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 400,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -159,9 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 490
+                    "value": 790
                 },
-                "amount": "VV"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1340
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1980
+                },
+                "amount": "OVC"
             }
         ]
     }
