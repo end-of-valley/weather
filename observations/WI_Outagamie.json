@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KATW/observations/2022-11-19T14:45:00+00:00",
+    "id": "https://api.weather.gov/stations/KATW/observations/2022-11-19T15:45:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KATW/observations/2022-11-19T14:45:00+00:00",
+        "@id": "https://api.weather.gov/stations/KATW/observations/2022-11-19T15:45:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 280
         },
         "station": "https://api.weather.gov/stations/KATW",
-        "timestamp": "2022-11-19T14:45:00+00:00",
-        "rawMessage": "KATW 191445Z 25012KT 7SM BKN017 OVC030 M07/M11 A2979",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-19T15:45:00+00:00",
+        "rawMessage": "KATW 191545Z 28017KT 7SM -SN SCT017 BKN023 M06/M11 A2981",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -7,
+            "value": -6,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -76,13 +83,13 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 250,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 22.32,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,7 +98,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100880,
+            "value": 100950,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -129,12 +136,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 73.136895889374003,
+            "value": 67.746539049831,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -14.456545863782056,
+            "value": null,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -148,14 +155,14 @@
                     "unitCode": "wmoUnit:m",
                     "value": 520
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 910
+                    "value": 700
                 },
-                "amount": "OVC"
+                "amount": "BKN"
             }
         ]
     }
