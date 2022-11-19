@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KSTP",
         "timestamp": "2022-11-19T09:53:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Windy",
-        "icon": "https://api.weather.gov/icons/land/night/wind_?size=medium",
-        "presentWeather": [],
+        "rawMessage": "KSTP 190953Z AUTO 31019G28KT 9SM -SN OVC032 M06/M11 A2988 RMK AO2 PK WND 32028/0946 SNB53 SLP127 P0000 T10561111",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -5.5999999999999996,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 980
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
