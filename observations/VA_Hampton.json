@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLFI/observations/2022-11-22T02:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KLFI/observations/2022-11-22T03:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLFI/observations/2022-11-22T02:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLFI/observations/2022-11-22T03:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KLFI",
-        "timestamp": "2022-11-22T02:55:00+00:00",
-        "rawMessage": "KLFI 220255Z 23006KT 10SM FEW200 07/04 A3038 RMK AO2A SLP294 P0000 60000 T00690035 52002 $",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-22T03:55:00+00:00",
+        "rawMessage": "KLFI 220355Z AUTO 24005KT 10SM +RA OVC200 06/04 A3039 RMK AO2 RAB0250 SLP298 P0000 T00620037 $",
+        "textDescription": "Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -119,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -148,7 +155,7 @@
                     "unitCode": "wmoUnit:m",
                     "value": 6100
                 },
-                "amount": "FEW"
+                "amount": "OVC"
             }
         ]
     }
