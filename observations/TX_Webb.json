@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLRD/observations/2022-11-23T15:08:00+00:00",
+    "id": "https://api.weather.gov/stations/KLRD/observations/2022-11-23T15:27:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLRD/observations/2022-11-23T15:08:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLRD/observations/2022-11-23T15:27:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 155
         },
         "station": "https://api.weather.gov/stations/KLRD",
-        "timestamp": "2022-11-23T15:08:00+00:00",
-        "rawMessage": "KLRD 231508Z 05006KT 5SM BR OVC003 11/11 A3015 RMK AO2 RAE03 P0000",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2022-11-23T15:27:00+00:00",
+        "rawMessage": "KLRD 231527Z 04005KT 2SM -RA BR BKN003 OVC016 11/11 A3015 RMK AO2 P0000",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 8050,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -154,6 +160,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 90
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 490
                 },
                 "amount": "OVC"
             }
