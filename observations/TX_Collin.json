@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KTKI/observations/2022-11-24T11:01:00+00:00",
+    "id": "https://api.weather.gov/stations/KTKI/observations/2022-11-24T12:07:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KTKI/observations/2022-11-24T11:01:00+00:00",
+        "@id": "https://api.weather.gov/stations/KTKI/observations/2022-11-24T12:07:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 179
         },
         "station": "https://api.weather.gov/stations/KTKI",
-        "timestamp": "2022-11-24T11:01:00+00:00",
-        "rawMessage": "KTKI 241101Z AUTO 12005KT 2 1/2SM BR OVC004 11/11 A2994 RMK AO2 RAE1057 P0000 T01110106 $",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-11-24T12:07:00+00:00",
+        "rawMessage": "KTKI 241207Z VRB03KT 4SM VCTS -RA BR BKN002 OVC020 12/12 A2993 RMK AO2 LTG DSNT S TSE1154 P0002 T01170117 $",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4020,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,7 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 120
+                    "value": 60
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
                 },
                 "amount": "OVC"
             }
