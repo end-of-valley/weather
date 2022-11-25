@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSSC/observations/2022-11-25T04:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KSSC/observations/2022-11-25T05:00:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSSC/observations/2022-11-25T04:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSSC/observations/2022-11-25T05:00:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 74
         },
         "station": "https://api.weather.gov/stations/KSSC",
-        "timestamp": "2022-11-25T04:55:00+00:00",
-        "rawMessage": "KSSC 250455Z AUTO 03004KT 10SM -RA FEW013 BKN028 13/11 A3013 RMK AO2 DZE02RAB28E37DZB37E39RAB44 BKN V OVC CIG 027 RWY22 SLP204 P0000 T01260108 401590072 $",
-        "textDescription": "Light Rain",
+        "timestamp": "2022-11-25T05:00:00+00:00",
+        "rawMessage": "KSSC 250500Z AUTO 02004KT 10SM -DZ SCT013 BKN023 BKN028 13/11 A3012 RMK AO2 RAE0455DZB00 CIG 023V028 SLP201 $",
+        "textDescription": "Light Drizzle",
         "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "-RA"
+                "weather": "drizzle",
+                "rawString": "-DZ"
             }
         ],
         "temperature": {
@@ -121,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -155,7 +155,14 @@
                     "unitCode": "wmoUnit:m",
                     "value": 400
                 },
-                "amount": "FEW"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 700
+                },
+                "amount": "BKN"
             },
             {
                 "base": {
