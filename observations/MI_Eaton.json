@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFPK/observations/2022-11-27T11:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KFPK/observations/2022-11-27T11:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFPK/observations/2022-11-27T11:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFPK/observations/2022-11-27T11:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 272
         },
         "station": "https://api.weather.gov/stations/KFPK",
-        "timestamp": "2022-11-27T11:15:00+00:00",
-        "rawMessage": "KFPK 271115Z AUTO 19007KT 10SM BKN070 OVC080 04/00 A2960 RMK AO2 T00381001",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-27T11:35:00+00:00",
+        "rawMessage": "KFPK 271135Z AUTO 00000KT 10SM -RA BKN060 BKN070 OVC080 04/00 A2961 RMK AO2 T00400000",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -143,6 +150,13 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "BKN"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
