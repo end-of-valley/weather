@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLFI/observations/2022-11-30T13:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KLFI/observations/2022-11-30T14:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLFI/observations/2022-11-30T13:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLFI/observations/2022-11-30T14:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 3
         },
         "station": "https://api.weather.gov/stations/KLFI",
-        "timestamp": "2022-11-30T13:55:00+00:00",
-        "rawMessage": "KLFI 301355Z 22004KT 10SM +DZ 046 SCT020 OVC080 14/14 A3002 RMK AO2A DZB1255E1257RAB1257E07DZB27E52RAB52E53DZB53 SLP172 P0000 T01410139 $",
-        "textDescription": "Heavy Drizzle",
+        "timestamp": "2022-11-30T14:55:00+00:00",
+        "rawMessage": "KLFI 301455Z 25005KT 4SM RA BR BKN017 OVC050 14/14 A3003 RMK AO2A VIS 2 RWY26 DZE1357RAB1357 SLP176 P0010 60010 T01440142 55005 $",
+        "textDescription": "Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": "heavy",
+                "intensity": null,
                 "modifier": null,
-                "weather": "drizzle",
-                "rawString": "+DZ"
+                "weather": "rain",
+                "rawString": "RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,14 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 520
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
