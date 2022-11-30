@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSFM/observations/2022-11-30T04:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KSFM/observations/2022-11-30T05:36:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,37 +52,44 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSFM/observations/2022-11-30T04:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSFM/observations/2022-11-30T05:36:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 74
         },
         "station": "https://api.weather.gov/stations/KSFM",
-        "timestamp": "2022-11-30T04:56:00+00:00",
-        "rawMessage": "KSFM 300456Z AUTO 02003KT 10SM FEW017 OVC041 00/M01 A3033 RMK AO2 UPB07E19 SLP275 P0000 T00001011 FZRANO",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-11-30T05:36:00+00:00",
+        "rawMessage": "KSFM 300536Z AUTO 00000KT 10SM -RA SCT017 BKN024 OVC041 01/M01 A3031 RMK AO2 RAB26 P0000 FZRANO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 0,
-            "qualityControl": "V"
+            "value": 1,
+            "qualityControl": "S"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.1000000000000001,
-            "qualityControl": "V"
+            "value": -1,
+            "qualityControl": "S"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 20,
-            "qualityControl": "V"
+            "value": 0,
+            "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4000000000000004,
-            "qualityControl": "V"
+            "value": 0,
+            "qualityControl": "S"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,13 +98,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102710,
-            "qualityControl": "V"
+            "value": 102640,
+            "qualityControl": "S"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102750,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -129,18 +136,18 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 92.299311472691997,
-            "qualityControl": "V"
+            "value": 86.498742535901002,
+            "qualityControl": "S"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.7549121214722223,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "S"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "cloudLayers": [
             {
@@ -148,7 +155,14 @@
                     "unitCode": "wmoUnit:m",
                     "value": 520
                 },
-                "amount": "FEW"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "BKN"
             },
             {
                 "base": {
