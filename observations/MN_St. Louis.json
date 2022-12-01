@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEVM/observations/2022-12-01T08:02:00+00:00",
+    "id": "https://api.weather.gov/stations/KEVM/observations/2022-12-01T08:22:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEVM/observations/2022-12-01T08:02:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEVM/observations/2022-12-01T08:22:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 421
         },
         "station": "https://api.weather.gov/stations/KEVM",
-        "timestamp": "2022-12-01T08:02:00+00:00",
-        "rawMessage": "KEVM 010802Z AUTO 24004KT 10SM SCT011 M16/M18 A3023 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-01T08:22:00+00:00",
+        "rawMessage": "KEVM 010822Z AUTO 28004KT 10SM -SN CLR M16/M18 A3023 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": null
                 },
-                "amount": "SCT"
+                "amount": "CLR"
             }
         ]
     }
