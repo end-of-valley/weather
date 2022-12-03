@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCKV/observations/2022-12-03T03:52:00+00:00",
+    "id": "https://api.weather.gov/stations/KCKV/observations/2022-12-03T04:52:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCKV/observations/2022-12-03T03:52:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCKV/observations/2022-12-03T04:52:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 165
         },
         "station": "https://api.weather.gov/stations/KCKV",
-        "timestamp": "2022-12-03T03:52:00+00:00",
-        "rawMessage": "KCKV 030352Z AUTO 19016G30KT 10SM BKN045 OVC055 16/09 A3007 RMK AO2 PK WND 18030/0349 SLP181 T01610094 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-03T04:52:00+00:00",
+        "rawMessage": "KCKV 030452Z AUTO 21014G24KT 10SM -RA BKN023 BKN030 OVC042 16/11 A3009 RMK AO2 PK WND 19028/0425 RAB41 SLP186 P0000 T01610111 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,7 +93,7 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 55.439999999999998,
+            "value": 44.640000000000001,
             "qualityControl": "S"
         },
         "barometricPressure": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -146,14 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1370
+                    "value": 700
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1680
+                    "value": 910
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
                 },
                 "amount": "OVC"
             }
