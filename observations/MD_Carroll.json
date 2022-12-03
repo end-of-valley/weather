@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDMW/observations/2022-12-03T07:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KDMW/observations/2022-12-03T07:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDMW/observations/2022-12-03T07:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDMW/observations/2022-12-03T07:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 241
         },
         "station": "https://api.weather.gov/stations/KDMW",
-        "timestamp": "2022-12-03T07:15:00+00:00",
-        "rawMessage": "KDMW 030715Z AUTO 18009KT 10SM SCT110 08/02 A3024 RMK AO2",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-03T07:55:00+00:00",
+        "rawMessage": "KDMW 030755Z AUTO 18010G15KT 10SM -RA SCT080 BKN090 08/04 A3022 RMK AO2",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 2440
                 },
                 "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "BKN"
             }
         ]
     }
