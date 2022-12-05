@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPNS/observations/2022-12-05T22:10:00+00:00",
+    "id": "https://api.weather.gov/stations/KPNS/observations/2022-12-05T22:59:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPNS/observations/2022-12-05T22:10:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPNS/observations/2022-12-05T22:59:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 38
         },
         "station": "https://api.weather.gov/stations/KPNS",
-        "timestamp": "2022-12-05T22:10:00+00:00",
-        "rawMessage": "KPNS 052210Z 20004KT 10SM BKN003 21/19 A3003 RMK AO2 T02060189",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-05T22:59:00+00:00",
+        "rawMessage": "KPNS 052259Z 15005KT 1/4SM FG BKN003 BKN070 20/19 A3003 RMK AO2 CIG 002V006 T02000189 RVRNO",
+        "textDescription": "Fog",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 400,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -147,6 +154,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 90
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
                 },
                 "amount": "BKN"
             }
