@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KUZA/observations/2022-12-06T08:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KUZA/observations/2022-12-06T09:10:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KUZA/observations/2022-12-06T08:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KUZA/observations/2022-12-06T09:10:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 203
         },
         "station": "https://api.weather.gov/stations/KUZA",
-        "timestamp": "2022-12-06T08:54:00+00:00",
-        "rawMessage": "KUZA 060854Z AUTO 03005KT 5SM BR BKN006 OVC013 07/06 A3019 RMK AO2 RAB0757E50 CIG 003V009 SLP225 P0002 60008 T00670056 56001",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-12-06T09:10:00+00:00",
+        "rawMessage": "KUZA 060910Z AUTO 02005KT 6SM -RA BR BKN004 BKN008 OVC013 07/06 A3019 RMK AO2 RAB00 P0000 T00670056",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -83,7 +89,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 30,
+            "value": 20,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -103,12 +109,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102250,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 8050,
+            "value": 9660,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,7 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 180
+                    "value": 120
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 240
                 },
                 "amount": "BKN"
             },
