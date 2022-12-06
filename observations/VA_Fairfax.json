@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDAA/observations/2022-12-06T05:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KDAA/observations/2022-12-06T06:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,26 +52,33 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDAA/observations/2022-12-06T05:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDAA/observations/2022-12-06T06:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 23
         },
         "station": "https://api.weather.gov/stations/KDAA",
-        "timestamp": "2022-12-06T05:55:00+00:00",
-        "rawMessage": "KDAA 060555Z AUTO 00000KT 10SM CLR M02/M04 A3023 RMK AO2 SLP240 T10161036 10012 21017 57007 $",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-06T06:56:00+00:00",
+        "rawMessage": "KDAA 060656Z AUTO 00000KT 10SM -FZDZ OVC027 M00/M03 A3023 RMK AO2 FZDZB55 SLP240 $",
+        "textDescription": "Light Freezing Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "freezing",
+                "weather": "drizzle",
+                "rawString": "-FZDZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": -1.6000000000000001,
+            "value": 0,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -3.6000000000000001,
+            "value": -3,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 86.226372212396996,
+            "value": 80.229750393125002,
             "qualityControl": "V"
         },
         "windChill": {
@@ -146,9 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 820
                 },
-                "amount": "CLR"
+                "amount": "OVC"
             }
         ]
     }
