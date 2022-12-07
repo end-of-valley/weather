@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KGEG/observations/2022-12-07T21:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KGEG/observations/2022-12-07T22:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KGEG/observations/2022-12-07T21:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KGEG/observations/2022-12-07T22:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 721
         },
         "station": "https://api.weather.gov/stations/KGEG",
-        "timestamp": "2022-12-07T21:53:00+00:00",
-        "rawMessage": "KGEG 072153Z 05005KT 1/4SM R21/2600V4500FT FZFG VV003 M02/M03 A3010 RMK AO2 SFC VIS 1/2 SLP220 T10171033",
-        "textDescription": "Fog",
+        "timestamp": "2022-12-07T22:53:00+00:00",
+        "rawMessage": "KGEG 072253Z 06005KT 1/4SM R21/2000V5500FT BR FEW001 OVC003 M02/M03 A3009 RMK AO2 SFC VIS 3/4 SLP217 T10171033",
+        "textDescription": "Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
         "presentWeather": [
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "fog",
-                "rawString": "FG"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -83,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 50,
+            "value": 60,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -98,12 +98,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101930,
+            "value": 101900,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102200,
+            "value": 102170,
             "qualityControl": "V"
         },
         "visibility": {
@@ -153,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 30
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 90
                 },
-                "amount": "VV"
+                "amount": "OVC"
             }
         ]
     }
