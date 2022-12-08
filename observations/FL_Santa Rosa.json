@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KNSE/observations/2022-12-07T23:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KNSE/observations/2022-12-08T01:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KNSE/observations/2022-12-07T23:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KNSE/observations/2022-12-08T01:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 61
         },
         "station": "https://api.weather.gov/stations/KNSE",
-        "timestamp": "2022-12-07T23:56:00+00:00",
-        "rawMessage": "KNSE 072356Z 20005KT 10SM SCT035 21/19 A3027 RMK AO2 SLP237 T02110189 10278 20194 53006 $",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-08T01:56:00+00:00",
+        "rawMessage": "KNSE 080156Z 21003KT 4SM BR FEW005 FEW030 19/18 A3029 RMK AO2 SLP242 T01890183 $",
+        "textDescription": "Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 150
                 },
-                "amount": "SCT"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "FEW"
             }
         ]
     }
