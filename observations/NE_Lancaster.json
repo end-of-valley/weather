@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLNK/observations/2022-12-08T21:54:00+00:00",
+    "id": "https://api.weather.gov/stations/KLNK/observations/2022-12-08T22:09:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLNK/observations/2022-12-08T21:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLNK/observations/2022-12-08T22:09:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 362
         },
         "station": "https://api.weather.gov/stations/KLNK",
-        "timestamp": "2022-12-08T21:54:00+00:00",
-        "rawMessage": "KLNK 082154Z 01003KT 1SM R36/P6000FT BR OVC002 00/M01 A3010 RMK AO2 FZRAE18 SLP205 P0001 I1001 T00001011",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2022-12-08T22:09:00+00:00",
+        "rawMessage": "KLNK 082209Z AUTO 03003KT 1SM R36/6000VP6000FT -FZRA BR OVC002 00/M01 A3010 RMK AO2 FZRAB03 P0000 I1001 T00001011",
+        "textDescription": "Light Freezing Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/fzra?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "freezing",
+                "weather": "rain",
+                "rawString": "-FZRA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -83,7 +89,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 10,
+            "value": 30,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -103,8 +109,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102050,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
