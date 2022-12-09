@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFDK/observations/2022-12-09T09:20:00+00:00",
+    "id": "https://api.weather.gov/stations/KFDK/observations/2022-12-09T10:00:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFDK/observations/2022-12-09T09:20:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFDK/observations/2022-12-09T10:00:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 92
         },
         "station": "https://api.weather.gov/stations/KFDK",
-        "timestamp": "2022-12-09T09:20:00+00:00",
-        "rawMessage": "KFDK 090920Z AUTO 00000KT 01/01 A3031 RMK AO2 PWINO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-09T10:00:00+00:00",
+        "rawMessage": "KFDK 091000Z AUTO 02004KT 7SM -SN CLR 00/00 A3031 RMK AO2",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,8 +108,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 11270,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": null
+                },
+                "amount": "CLR"
+            }
+        ]
     }
 }
