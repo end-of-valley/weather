@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KCVG",
         "timestamp": "2022-12-09T02:41:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KCVG 090241Z 04008KT 4SM BR BKN011 OVC060 07/06 A3024 RMK AO2 RAB00E08 P0000 T00720061",
+        "textDescription": "Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 7.2000000000000002,
@@ -142,6 +149,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 340
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

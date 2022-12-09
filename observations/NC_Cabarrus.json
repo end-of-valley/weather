@@ -60,10 +60,23 @@
         },
         "station": "https://api.weather.gov/stations/KJQF",
         "timestamp": "2022-12-09T01:50:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KJQF 090150Z 08004KT 5SM -RA BR OVC003 15/14 A3019",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 15,
@@ -142,6 +155,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 90
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

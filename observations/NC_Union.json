@@ -60,10 +60,23 @@
         },
         "station": "https://api.weather.gov/stations/KEQY",
         "timestamp": "2022-12-09T01:53:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KEQY 090153Z AUTO 05006KT 6SM -RA BR BKN007 OVC015 16/14 A3015 RMK AO2 RAB07 SLP217 P0001 T01560144",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 15.6,
@@ -142,6 +155,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 210
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 460
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
