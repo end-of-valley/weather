@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFSD/observations/2022-12-08T23:11:00+00:00",
+    "id": "https://api.weather.gov/stations/KFSD/observations/2022-12-09T00:17:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,30 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFSD/observations/2022-12-08T23:11:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFSD/observations/2022-12-09T00:17:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 435
         },
         "station": "https://api.weather.gov/stations/KFSD",
-        "timestamp": "2022-12-08T23:11:00+00:00",
-        "rawMessage": "KFSD 082311Z 08006KT 3SM BR OVC005 M01/M03 A3013 RMK AO2 T10111033",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-12-09T00:17:00+00:00",
+        "rawMessage": "KFSD 090017Z 08005KT 1 1/2SM -FZDZPL BR OVC004 M01/M02 A3013 RMK AO2 SFC VIS 1 3/4 FZDZB07PLB12 P0000 I1001 T10061022",
+        "textDescription": "Light Freezing Drizzle and Sleet and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/sleet?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "freezing",
+                "weather": "drizzle",
+                "rawString": "-FZDZ"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "ice_pellets",
+                "rawString": "PL"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -108,7 +120,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 2410,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,8 +133,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,7 +165,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 150
+                    "value": 120
                 },
                 "amount": "OVC"
             }
