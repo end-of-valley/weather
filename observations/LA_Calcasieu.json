@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLCH/observations/2022-12-09T11:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KLCH/observations/2022-12-09T12:08:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLCH/observations/2022-12-09T11:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLCH/observations/2022-12-09T12:08:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 5
         },
         "station": "https://api.weather.gov/stations/KLCH",
-        "timestamp": "2022-12-09T11:56:00+00:00",
-        "rawMessage": "KLCH 091156Z AUTO 19/19 A3014 RMK AO2 T01940194 PWINO RVRNO",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-09T12:08:00+00:00",
+        "rawMessage": "KLCH 091208Z 00000KT M1/4SM FG VV002 19/19 A3014 RMK AO2 T01940194 RVRNO",
+        "textDescription": "Fog",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,8 +108,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 400,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 60
+                },
+                "amount": "VV"
+            }
+        ]
     }
 }
