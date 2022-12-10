@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDTN/observations/2022-12-10T03:26:00+00:00",
+    "id": "https://api.weather.gov/stations/KDTN/observations/2022-12-10T03:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDTN/observations/2022-12-10T03:26:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDTN/observations/2022-12-10T03:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 55
         },
         "station": "https://api.weather.gov/stations/KDTN",
-        "timestamp": "2022-12-10T03:26:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-10T03:53:00+00:00",
+        "rawMessage": "KDTN 100353Z AUTO 00000KT 1/4SM FG VV006 17/16 A3010 RMK AO2 SLP193 T01670161",
+        "textDescription": "Fog",
+        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 17.199999999999999,
+            "value": 16.699999999999999,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -91,13 +98,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101970,
+            "value": 101930,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101930,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 93.251499106658997,
+            "value": 96.253552852800993,
             "qualityControl": "V"
         },
         "windChill": {
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 180
+                },
+                "amount": "VV"
+            }
+        ]
     }
 }
