@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCMH/observations/2022-12-11T04:30:00+00:00",
+    "id": "https://api.weather.gov/stations/KCMH/observations/2022-12-11T05:06:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCMH/observations/2022-12-11T04:30:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCMH/observations/2022-12-11T05:06:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 249
         },
         "station": "https://api.weather.gov/stations/KCMH",
-        "timestamp": "2022-12-11T04:30:00+00:00",
-        "rawMessage": "KCMH 110430Z 00000KT 6SM BR SCT024 OVC032 06/04 A3011 RMK AO2 T00560044 $",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2022-12-11T05:06:00+00:00",
+        "rawMessage": "KCMH 110506Z 12003KT 6SM -RA BR SCT018 OVC029 06/04 A3011 RMK AO2 RAB0456 CIG 020 NW P0000 T00560044 $",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,14 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 730
+                    "value": 550
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 980
+                    "value": 880
                 },
                 "amount": "OVC"
             }
