@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KEWR/observations/2022-12-12T02:57:00+00:00",
+    "id": "https://api.weather.gov/stations/KEWR/observations/2022-12-12T04:04:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KEWR/observations/2022-12-12T02:57:00+00:00",
+        "@id": "https://api.weather.gov/stations/KEWR/observations/2022-12-12T04:04:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 9
         },
         "station": "https://api.weather.gov/stations/KEWR",
-        "timestamp": "2022-12-12T02:57:00+00:00",
-        "rawMessage": "KEWR 120257Z 36012KT 2 1/2SM -SN BR BKN006 BKN010 OVC014 02/00 A3009 RMK AO2 SFC VIS 3 PLE57 P0000 T00170000",
-        "textDescription": "Light Snow and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "timestamp": "2022-12-12T04:04:00+00:00",
+        "rawMessage": "KEWR 120404Z 01012KT 2 1/2SM -SNPL BR BKN006 OVC020 01/00 A3009 RMK AO2 SFC VIS 4 PLB03 P0000 T00110000",
+        "textDescription": "Light Snow and Sleet and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/winter_mix?size=medium",
         "presentWeather": [
             {
                 "intensity": "light",
                 "modifier": null,
                 "weather": "snow",
                 "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "ice_pellets",
+                "rawString": "PL"
             },
             {
                 "intensity": null,
@@ -166,14 +172,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 300
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 430
+                    "value": 610
                 },
                 "amount": "OVC"
             }
