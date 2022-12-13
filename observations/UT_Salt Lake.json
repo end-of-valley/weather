@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSLC/observations/2022-12-13T17:33:00+00:00",
+    "id": "https://api.weather.gov/stations/KSLC/observations/2022-12-13T18:09:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSLC/observations/2022-12-13T17:33:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSLC/observations/2022-12-13T18:09:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 1288
         },
         "station": "https://api.weather.gov/stations/KSLC",
-        "timestamp": "2022-12-13T17:33:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-13T18:09:00+00:00",
+        "rawMessage": "KSLC 131809Z 28010KT 2SM R16L/6000VP6000FT -SN BR SCT008 OVC013 M01/M03 A2992 RMK AO2 SFC VIS 3 VIS 1 1/4 NW RNWY CIG 007 NW RNWY P0000 T10061028",
+        "textDescription": "Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -0.59999999999999998,
@@ -142,6 +155,21 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 240
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
