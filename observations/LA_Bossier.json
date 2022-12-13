@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDTN/observations/2022-12-13T22:31:00+00:00",
+    "id": "https://api.weather.gov/stations/KDTN/observations/2022-12-13T23:01:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDTN/observations/2022-12-13T22:31:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDTN/observations/2022-12-13T23:01:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 55
         },
         "station": "https://api.weather.gov/stations/KDTN",
-        "timestamp": "2022-12-13T22:31:00+00:00",
-        "rawMessage": "KDTN 132231Z 17012KT 10SM VCTS FEW013 BKN020 OVC080 21/18 A2964 RMK AO2 LTG DSNT ALQDS RAE03 TSB10E25 PRESRR P0000 T02060183",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-13T23:01:00+00:00",
+        "rawMessage": "KDTN 132301Z VRB04KT 5SM VCTS -RA BR BKN010 OVC020 21/19 A2966 RMK AO2 LTG DSNT ALQDS P0001 T02060189",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 8050,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,21 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 610
+                    "value": 300
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 610
                 },
                 "amount": "OVC"
             }
