@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHOG/observations/2022-12-13T11:54:00+00:00",
+    "id": "https://api.weather.gov/stations/PHOG/observations/2022-12-13T12:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHOG/observations/2022-12-13T11:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHOG/observations/2022-12-13T12:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 20
         },
         "station": "https://api.weather.gov/stations/PHOG",
-        "timestamp": "2022-12-13T11:54:00+00:00",
-        "rawMessage": "PHOG 131154Z AUTO 05012G18KT 10SM CLR 22/18 A2993 RMK AO2 RAB19E29 SLP141 P0000 60000 70018 T02220183 10228 20217 56020 TSNO",
-        "textDescription": "Clear",
-        "icon": "https://api.weather.gov/icons/land/night/skc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-13T12:54:00+00:00",
+        "rawMessage": "PHOG 131254Z AUTO 04014KT 6SM -RA SCT045 BKN070 22/19 A2995 RMK AO2 RAB45 SLP146 P0000 T02220194 TSNO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 9660,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -124,8 +131,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": null
+                    "value": 1370
                 },
-                "amount": "CLR"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2130
+                },
+                "amount": "BKN"
             }
         ]
     }
