@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDED/observations/2022-12-13T15:10:00+00:00",
+    "id": "https://api.weather.gov/stations/KDED/observations/2022-12-13T15:50:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDED/observations/2022-12-13T15:10:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDED/observations/2022-12-13T15:50:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 24
         },
         "station": "https://api.weather.gov/stations/KDED",
-        "timestamp": "2022-12-13T15:10:00+00:00",
-        "rawMessage": "KDED 131510Z AUTO 05005KT 10SM SCT008 SCT022 OVC028 19/18 A3014 RMK AO2 T01910176",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-13T15:50:00+00:00",
+        "rawMessage": "KDED 131550Z AUTO 05007KT 3SM -DZ BR SCT008 BKN021 OVC039 19/18 A3014 RMK AO2 T01870178",
+        "textDescription": "Light Drizzle and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,14 +166,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 670
+                    "value": 640
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 1190
                 },
                 "amount": "OVC"
             }
