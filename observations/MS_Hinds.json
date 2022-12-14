@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHKS/observations/2022-12-14T08:17:00+00:00",
+    "id": "https://api.weather.gov/stations/KHKS/observations/2022-12-14T08:41:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHKS/observations/2022-12-14T08:17:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHKS/observations/2022-12-14T08:41:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 104
         },
         "station": "https://api.weather.gov/stations/KHKS",
-        "timestamp": "2022-12-14T08:17:00+00:00",
-        "rawMessage": "KHKS 140817Z AUTO 16011KT 10SM TS BKN018 OVC026 22/19 A2976 RMK AO2 LTG DSNT ALQDS TSB11 T02220194",
-        "textDescription": "Thunderstorms",
-        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "timestamp": "2022-12-14T08:41:00+00:00",
+        "rawMessage": "KHKS 140841Z AUTO 15010KT 10SM -RA SCT016 BKN042 OVC080 22/19 A2975 RMK AO2 LTG DSNT ALQDS RAB34 TSB11E26 P0000 T02170194",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
-                "weather": "thunderstorms",
-                "rawString": "TS"
+                "weather": "rain",
+                "rawString": "-RA"
             }
         ],
         "temperature": {
@@ -121,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,14 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 550
+                    "value": 490
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 790
+                    "value": 2440
                 },
                 "amount": "OVC"
             }
