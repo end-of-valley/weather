@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KGED",
         "timestamp": "2022-12-15T09:54:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KGED 150954Z AUTO 04004KT 10SM -RA OVC085 03/01 A3017 RMK AO2 SLP216 P0002 T00280006",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 2.7999999999999998,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2590
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }

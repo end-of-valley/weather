@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KBKL",
         "timestamp": "2022-12-15T09:53:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KBKL 150953Z 14021G30KT 10SM -RA OVC085 04/01 A2964 RMK AO2 PK WND 12033/0904 SLP039 P0004 T00440011",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 4.4000000000000004,
@@ -96,8 +103,8 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100390,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2590
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
