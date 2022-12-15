@@ -60,10 +60,17 @@
         },
         "station": "https://api.weather.gov/stations/KJHW",
         "timestamp": "2022-12-15T09:56:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "rawMessage": "KJHW 150956Z AUTO 16010G20KT 10SM -RA OVC090 00/M06 A2988 RMK AO2 PK WND 15028/0919 RAB42 SLP143 P0000 T00001061 FZRANO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0,
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 2740
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
