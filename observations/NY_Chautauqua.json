@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJHW/observations/2022-12-15T13:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KJHW/observations/2022-12-15T15:05:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJHW/observations/2022-12-15T13:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJHW/observations/2022-12-15T15:05:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 525
         },
         "station": "https://api.weather.gov/stations/KJHW",
-        "timestamp": "2022-12-15T13:56:00+00:00",
-        "rawMessage": "KJHW 151356Z AUTO RMK AO2 UPEMM SLPNO P0002 PWINO FZRANO RVRNO $",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-15T15:05:00+00:00",
+        "rawMessage": "KJHW 151505Z AUTO 16012G23KT 10SM -RA OVC012 01/M01 A2983 RMK AO2 UPE02RAB02 P0000 FZRANO",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,8 +108,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 16090,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 370
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
