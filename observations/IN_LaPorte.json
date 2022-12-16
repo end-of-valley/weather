@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T15:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T15:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T15:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T15:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 248
         },
         "station": "https://api.weather.gov/stations/KPPO",
-        "timestamp": "2022-12-16T15:15:00+00:00",
-        "rawMessage": "KPPO 161515Z AUTO 21009KT 10SM SCT028 00/M02 A2968 RMK AO2 T10031016",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T15:55:00+00:00",
+        "rawMessage": "KPPO 161555Z AUTO 21008KT 7SM -SN BKN025 BKN030 00/M02 A2968 RMK AO2 T10011019",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 11270,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 760
                 },
-                "amount": "SCT"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "BKN"
             }
         ]
     }
