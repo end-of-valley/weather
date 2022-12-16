@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T14:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T14:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T14:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T14:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 177
         },
         "station": "https://api.weather.gov/stations/KJOT",
-        "timestamp": "2022-12-16T14:15:00+00:00",
-        "rawMessage": "KJOT 161415Z AUTO 21008KT 10SM OVC028 00/M03 A2966 RMK AO2 T00021034",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T14:55:00+00:00",
+        "rawMessage": "KJOT 161455Z AUTO 21008G14KT 3SM -SN SCT018 OVC024 00/M02 A2966 RMK AO2 T00021021",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 550
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
                 },
                 "amount": "OVC"
             }
