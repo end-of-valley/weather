@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KALB/observations/2022-12-16T16:57:00+00:00",
+    "id": "https://api.weather.gov/stations/KALB/observations/2022-12-16T17:33:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KALB/observations/2022-12-16T16:57:00+00:00",
+        "@id": "https://api.weather.gov/stations/KALB/observations/2022-12-16T17:33:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 87
         },
         "station": "https://api.weather.gov/stations/KALB",
-        "timestamp": "2022-12-16T16:57:00+00:00",
-        "rawMessage": "KALB 161657Z 33008KT 1SM R01/5000VP6000FT -SN BR BKN004 OVC018 01/00 A2973 RMK AO2 P0000 T00060000",
-        "textDescription": "Light Snow and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "timestamp": "2022-12-16T17:33:00+00:00",
+        "rawMessage": "KALB 161733Z 33008KT 1SM R01/P6000FT -RASN BR SCT004 BKN014 OVC025 01/00 A2971 RMK AO2 SFC VIS 2 RAB31 P0002 T00060000",
+        "textDescription": "Light Rain and Light Snow and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain_snow?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": "light",
                 "modifier": null,
@@ -104,7 +110,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100680,
+            "value": 100610,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -161,12 +167,19 @@
                     "unitCode": "wmoUnit:m",
                     "value": 120
                 },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 430
+                },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 550
+                    "value": 760
                 },
                 "amount": "OVC"
             }

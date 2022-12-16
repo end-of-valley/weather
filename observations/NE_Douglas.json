@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMLE/observations/2022-12-16T17:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMLE/observations/2022-12-16T17:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMLE/observations/2022-12-16T17:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMLE/observations/2022-12-16T17:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 320
         },
         "station": "https://api.weather.gov/stations/KMLE",
-        "timestamp": "2022-12-16T17:15:00+00:00",
-        "rawMessage": "KMLE 161715Z AUTO 29017G23KT OVC029 M05/M11 A2980 RMK AO2 T10541107 PWINO",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T17:35:00+00:00",
+        "rawMessage": "KMLE 161735Z AUTO 29012G19KT 10SM -SN BKN026 OVC031 M05/M11 A2981 RMK AO2 T10521106",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,7 +93,7 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 42.479999999999997,
+            "value": 35.280000000000001,
             "qualityControl": "S"
         },
         "barometricPressure": {
@@ -101,8 +108,8 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 16090,
+            "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
             "unitCode": "wmoUnit:degC",
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 880
+                    "value": 790
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 940
                 },
                 "amount": "OVC"
             }
