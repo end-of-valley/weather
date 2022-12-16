@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T05:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T05:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T05:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KJOT/observations/2022-12-16T05:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 177
         },
         "station": "https://api.weather.gov/stations/KJOT",
-        "timestamp": "2022-12-16T05:15:00+00:00",
-        "rawMessage": "KJOT 160515Z AUTO 23007KT 10SM OVC032 00/M04 A2969 RMK AO2 T00021037",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T05:35:00+00:00",
+        "rawMessage": "KJOT 160535Z AUTO 23007KT 10SM -SN SCT024 OVC032 00/M03 A2968 RMK AO2 T00021032",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -143,6 +150,13 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 730
+                },
+                "amount": "SCT"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
