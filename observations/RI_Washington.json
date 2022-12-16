@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KWST/observations/2022-12-16T13:00:00+00:00",
+    "id": "https://api.weather.gov/stations/KWST/observations/2022-12-16T13:16:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,22 +52,35 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KWST/observations/2022-12-16T13:00:00+00:00",
+        "@id": "https://api.weather.gov/stations/KWST/observations/2022-12-16T13:16:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
-            "value": 24.100000000000001
+            "value": 25
         },
         "station": "https://api.weather.gov/stations/KWST",
-        "timestamp": "2022-12-16T13:00:00+00:00",
-        "rawMessage": "",
-        "textDescription": "Windy",
-        "icon": "https://api.weather.gov/icons/land/day/wind_?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T13:16:00+00:00",
+        "rawMessage": "KWST 161316Z AUTO 06016G27KT 4SM -RA BR OVC012 07/05 A2976 RMK AO2 PK WND 06027/1311 P0002 T00670050",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 7,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
@@ -76,23 +89,23 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 70,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 35.171999999999997,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 46.295999999999999,
+            "value": 50.039999999999999,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100812.74000000001,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -112,7 +125,17 @@
             "unitCode": "wmoUnit:degC",
             "value": null
         },
+        "precipitationLastHour": {
+            "unitCode": "wmoUnit:mm",
+            "value": 0,
+            "qualityControl": "C"
+        },
         "precipitationLast3Hours": {
+            "unitCode": "wmoUnit:mm",
+            "value": null,
+            "qualityControl": "Z"
+        },
+        "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
             "value": null,
             "qualityControl": "Z"
@@ -120,18 +143,26 @@
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 2.2946988475138888,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 370
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
