@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T18:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T19:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T18:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-16T19:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 248
         },
         "station": "https://api.weather.gov/stations/KPPO",
-        "timestamp": "2022-12-16T18:55:00+00:00",
-        "rawMessage": "KPPO 161855Z AUTO 23014KT 10SM SCT060 M01/M02 A2965 RMK AO2 T10071021",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-16T19:15:00+00:00",
+        "rawMessage": "KPPO 161915Z AUTO 23012G16KT 10SM -SN SCT017 SCT022 SCT060 M01/M02 A2965 RMK AO2 T10071020",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -86,8 +93,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 29.52,
+            "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -143,6 +150,20 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 520
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 670
+                },
+                "amount": "SCT"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
