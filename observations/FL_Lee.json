@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFMY/observations/2022-12-16T22:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KFMY/observations/2022-12-16T22:24:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFMY/observations/2022-12-16T22:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFMY/observations/2022-12-16T22:24:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 5
         },
         "station": "https://api.weather.gov/stations/KFMY",
-        "timestamp": "2022-12-16T22:05:00+00:00",
-        "rawMessage": "KFMY 162205Z 06006KT 1 3/4SM RA SCT032 OVC042 16/12 A2999 RMK AO2 P0000 T01610122",
-        "textDescription": "Rain",
+        "timestamp": "2022-12-16T22:24:00+00:00",
+        "rawMessage": "KFMY 162224Z 05007KT 2SM -RA BR SCT034 SCT043 OVC050 15/13 A2999 RMK AO2 P0002 T01500133",
+        "textDescription": "Light Rain and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "light",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "RA"
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 2820,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -153,14 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 980
+                    "value": 1040
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1280
+                    "value": 1310
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
