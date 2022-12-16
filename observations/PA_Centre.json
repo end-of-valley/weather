@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KUNV/observations/2022-12-16T10:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KUNV/observations/2022-12-16T11:11:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KUNV/observations/2022-12-16T10:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KUNV/observations/2022-12-16T11:11:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 378
         },
         "station": "https://api.weather.gov/stations/KUNV",
-        "timestamp": "2022-12-16T10:15:00+00:00",
-        "rawMessage": "KUNV 161015Z AUTO 00000KT 1SM UP OVC002 00/00 A2976 RMK AO2 T00000000 P0001",
-        "textDescription": "Unknown Precipitation",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
+        "timestamp": "2022-12-16T11:11:00+00:00",
+        "rawMessage": "KUNV 161111Z 00000KT 1SM -RA BR OVC006 00/00 A2975",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "unknown",
-                "rawString": "UP"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,7 +159,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 60
+                    "value": 180
                 },
                 "amount": "OVC"
             }
