@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHOG/observations/2022-12-18T15:54:00+00:00",
+    "id": "https://api.weather.gov/stations/PHOG/observations/2022-12-18T16:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHOG/observations/2022-12-18T15:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHOG/observations/2022-12-18T16:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 20
         },
         "station": "https://api.weather.gov/stations/PHOG",
-        "timestamp": "2022-12-18T15:54:00+00:00",
-        "rawMessage": "PHOG 181554Z 23009KT 10SM FEW025 23/20 A2981 RMK AO2 SLP099 TS DSNT N T02280200 $",
-        "textDescription": "Mostly Clear",
-        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-18T16:54:00+00:00",
+        "rawMessage": "PHOG 181654Z 20009KT 10SM -RA FEW025 SCT060 23/20 A2982 RMK AO2 RAB52 SLP102 P0000 T02330200 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -149,6 +156,13 @@
                     "value": 760
                 },
                 "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1830
+                },
+                "amount": "SCT"
             }
         ]
     }
