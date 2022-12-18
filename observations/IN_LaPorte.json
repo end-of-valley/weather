@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-18T13:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KPPO/observations/2022-12-18T14:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-18T13:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPPO/observations/2022-12-18T14:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 248
         },
         "station": "https://api.weather.gov/stations/KPPO",
-        "timestamp": "2022-12-18T13:55:00+00:00",
-        "rawMessage": "KPPO 181355Z AUTO 25011KT 10SM SCT013 SCT090 M09/M10 A3008 RMK AO2 T10861100",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-18T14:15:00+00:00",
+        "rawMessage": "KPPO 181415Z AUTO 25011G15KT 10SM -SN CLR M09/M10 A3009 RMK AO2 T10861100",
+        "textDescription": "Light Snow",
+        "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,16 +153,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": null
                 },
-                "amount": "SCT"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2740
-                },
-                "amount": "SCT"
+                "amount": "CLR"
             }
         ]
     }
