@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KGPH/observations/2022-12-19T20:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KGPH/observations/2022-12-19T20:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,25 +52,18 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KGPH/observations/2022-12-19T20:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KGPH/observations/2022-12-19T20:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 237
         },
         "station": "https://api.weather.gov/stations/KGPH",
-        "timestamp": "2022-12-19T20:15:00+00:00",
-        "rawMessage": "KGPH 192015Z AUTO 12004KT 10SM -DZ 03/00 A3021 RMK AO2",
-        "textDescription": "Light Drizzle",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
-        "presentWeather": [
-            {
-                "intensity": "light",
-                "modifier": null,
-                "weather": "drizzle",
-                "rawString": "-DZ"
-            }
-        ],
+        "timestamp": "2022-12-19T20:35:00+00:00",
+        "rawMessage": "KGPH 192035Z AUTO 11003KT 10SM SCT031 OVC042 03/00 A3021 RMK AO2",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
+        "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -149,6 +142,21 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 940
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
