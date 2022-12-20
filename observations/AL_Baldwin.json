@@ -61,28 +61,35 @@
         "station": "https://api.weather.gov/stations/KBFM",
         "timestamp": "2022-12-20T05:33:00+00:00",
         "rawMessage": "KBFM 200533Z AUTO 09010KT 10SM -RA BKN022 OVC100 08/06 A3028 RMK AO2 P0003 T00830056",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 8.3000000000000007,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
             "value": 5.5999999999999996,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
             "value": 90,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
             "value": 18.359999999999999,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
@@ -92,7 +99,7 @@
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
             "value": 102540,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -130,18 +137,33 @@
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
             "value": 83.104539551895996,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
             "value": 5.4228769963522225,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
         "heatIndex": {
             "unitCode": "wmoUnit:degC",
             "value": null,
-            "qualityControl": "V"
+            "qualityControl": "S"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 670
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 3050
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
