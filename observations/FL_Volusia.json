@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KDED/observations/2022-12-20T18:10:00+00:00",
+    "id": "https://api.weather.gov/stations/KDED/observations/2022-12-20T18:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KDED/observations/2022-12-20T18:10:00+00:00",
+        "@id": "https://api.weather.gov/stations/KDED/observations/2022-12-20T18:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 24
         },
         "station": "https://api.weather.gov/stations/KDED",
-        "timestamp": "2022-12-20T18:10:00+00:00",
-        "rawMessage": "KDED 201810Z AUTO 00000KT 10SM BKN100 BKN120 18/16 A3019 RMK AO2 T01780162",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-20T18:30:00+00:00",
+        "rawMessage": "KDED 201830Z AUTO 00000KT 10SM -DZ SCT075 OVC100 18/16 A3019 RMK AO2 T01800164",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,16 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3050
+                    "value": 2290
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3660
+                    "value": 3050
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
