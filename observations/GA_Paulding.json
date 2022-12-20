@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KVPC/observations/2022-12-20T15:55:00+00:00",
+    "id": "https://api.weather.gov/stations/KVPC/observations/2022-12-20T16:15:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,29 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KVPC/observations/2022-12-20T15:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/KVPC/observations/2022-12-20T16:15:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 231
         },
         "station": "https://api.weather.gov/stations/KVPC",
-        "timestamp": "2022-12-20T15:55:00+00:00",
-        "rawMessage": "KVPC 201555Z AUTO 08006KT 4SM -RA HZ OVC026 05/02 A3043 RMK AO2 P0002",
-        "textDescription": "Light Rain and Haze",
-        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "timestamp": "2022-12-20T16:15:00+00:00",
+        "rawMessage": "KVPC 201615Z AUTO 09004KT 4SM UP BR FEW020 OVC026 05/03 A3043 RMK AO2",
+        "textDescription": "Unknown Precipitation and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "-RA"
+                "weather": "unknown",
+                "rawString": "UP"
             },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "haze",
-                "rawString": "HZ"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -127,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -156,6 +156,13 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
+                },
+                "amount": "FEW"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
