@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KFPR/observations/2022-12-21T02:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KFPR/observations/2022-12-21T03:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KFPR/observations/2022-12-21T02:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KFPR/observations/2022-12-21T03:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 7
         },
         "station": "https://api.weather.gov/stations/KFPR",
-        "timestamp": "2022-12-21T02:53:00+00:00",
-        "rawMessage": "KFPR 210253Z AUTO 13016KT 10SM OVC110 21/18 A3008 RMK AO2 RAE38 SLP185 P0001 60010 T02110178 58024",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-21T03:53:00+00:00",
+        "rawMessage": "KFPR 210353Z AUTO 13016KT 10SM -RA FEW036 OVC110 21/18 A3005 RMK AO2 PK WND 14027/0343 RAB06 SLP175 P0001 T02110178",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 21.100000000000001,
@@ -91,12 +98,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101860,
+            "value": 101760,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101850,
+            "value": 101750,
             "qualityControl": "V"
         },
         "visibility": {
@@ -119,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -143,6 +150,13 @@
             "qualityControl": "V"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1100
+                },
+                "amount": "FEW"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
