@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMDQ/observations/2022-12-22T20:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KMDQ/observations/2022-12-22T20:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMDQ/observations/2022-12-22T20:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMDQ/observations/2022-12-22T20:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 230
         },
         "station": "https://api.weather.gov/stations/KMDQ",
-        "timestamp": "2022-12-22T20:15:00+00:00",
-        "rawMessage": "KMDQ 222015Z AUTO 19009KT 10SM OVC011 09/07 A2984 RMK A02 T00930068",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-22T20:55:00+00:00",
+        "rawMessage": "KMDQ 222055Z AUTO 22005KT 10SM -DZ BKN015 OVC019 09/07 A2985 RMK A02 T00940073",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,7 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 340
+                    "value": 460
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 580
                 },
                 "amount": "OVC"
             }
