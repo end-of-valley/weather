@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KATW/observations/2022-12-23T11:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KATW/observations/2022-12-23T11:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,23 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KATW/observations/2022-12-23T11:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KATW/observations/2022-12-23T11:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 280
         },
         "station": "https://api.weather.gov/stations/KATW",
-        "timestamp": "2022-12-23T11:15:00+00:00",
-        "rawMessage": "KATW 231115Z AUTO 28021G32KT 2 1/2SM -SN OVC110 M22/M26 A2963 RMK AO2",
-        "textDescription": "Light Snow",
-        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "timestamp": "2022-12-23T11:30:00+00:00",
+        "rawMessage": "KATW 231130Z 28024G29KT 3SM BLSN BKN025 OVC110 M23/M27 A2963",
+        "textDescription": "Blowing Snow",
+        "icon": "https://api.weather.gov/icons/land/night/blizzard?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
-                "modifier": null,
+                "intensity": null,
+                "modifier": "blowing",
                 "weather": "snow",
-                "rawString": "-SN"
+                "rawString": "BLSN"
             }
         ],
         "temperature": {
@@ -93,7 +93,7 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 59.399999999999999,
+            "value": 53.640000000000001,
             "qualityControl": "S"
         },
         "barometricPressure": {
@@ -108,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4020,
+            "value": 4830,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -150,6 +150,13 @@
             "qualityControl": "Z"
         },
         "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 760
+                },
+                "amount": "BKN"
+            },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
