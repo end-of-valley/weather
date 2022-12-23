@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KTTD/observations/2022-12-23T11:26:00+00:00",
+    "id": "https://api.weather.gov/stations/KTTD/observations/2022-12-23T12:01:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KTTD/observations/2022-12-23T11:26:00+00:00",
+        "@id": "https://api.weather.gov/stations/KTTD/observations/2022-12-23T12:01:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 11
         },
         "station": "https://api.weather.gov/stations/KTTD",
-        "timestamp": "2022-12-23T11:26:00+00:00",
-        "rawMessage": "KTTD 231126Z AUTO 08029G37KT 4SM BLSN OVC028 M07/M12 A3011 RMK AO2 PK WND 08037/1109 UPB09E15SNE09 P0000 T10721122",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-23T12:01:00+00:00",
+        "rawMessage": "KTTD 231201Z AUTO 08023G40KT 2 1/2SM -FZRA OVC024 M07/M12 A3011 RMK AO2 PK WND 07040/1158 FZRAB1158 P0000 I1000 T10721122",
+        "textDescription": "Light Freezing Rain",
+        "icon": "https://api.weather.gov/icons/land/night/fzra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": "freezing",
+                "weather": "rain",
+                "rawString": "-FZRA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -7.2000000000000002,
@@ -86,8 +93,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 68.400000000000006,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 6440,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -146,7 +153,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 730
                 },
                 "amount": "OVC"
             }
