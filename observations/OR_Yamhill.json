@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMMV/observations/2022-12-24T16:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMMV/observations/2022-12-24T17:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMMV/observations/2022-12-24T16:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMMV/observations/2022-12-24T17:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 50
         },
         "station": "https://api.weather.gov/stations/KMMV",
-        "timestamp": "2022-12-24T16:53:00+00:00",
-        "rawMessage": "KMMV 241653Z AUTO 00000KT 1 3/4SM BR OVC037 00/M01 A3018 RMK AO2 UPB43E52 SLP220 P0000 T00001011",
-        "textDescription": "Fog/Mist",
+        "timestamp": "2022-12-24T17:53:00+00:00",
+        "rawMessage": "KMMV 241753Z AUTO 00000KT 1 1/4SM UP BR BKN035 OVC042 00/M01 A3018 RMK AO2 UPB37 SLP221 P0001 60001 I6000 T00001011 10000 21006 52001",
+        "textDescription": "Unknown Precipitation and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
         "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "unknown",
+                "rawString": "UP"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -103,12 +109,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102200,
+            "value": 102210,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 2820,
+            "value": 2010,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -131,8 +137,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -153,7 +159,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1130
+                    "value": 1070
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1280
                 },
                 "amount": "OVC"
             }
