@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KERI/observations/2022-12-24T01:51:00+00:00",
+    "id": "https://api.weather.gov/stations/KERI/observations/2022-12-24T02:51:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KERI/observations/2022-12-24T01:51:00+00:00",
+        "@id": "https://api.weather.gov/stations/KERI/observations/2022-12-24T02:51:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 225
         },
         "station": "https://api.weather.gov/stations/KERI",
-        "timestamp": "2022-12-24T01:51:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-24T02:51:00+00:00",
+        "rawMessage": "KERI 240251Z 21025G37KT 1/4SM R06/P6000FT +SN VV014 M18/M21 A2955 RMK AO2 PK WND 20040/0221 SLP022 P0001 60001 T11781211 $",
+        "textDescription": "Heavy Snow",
+        "icon": "https://api.weather.gov/icons/land/night/snow?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "+SN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -17.800000000000001,
@@ -86,17 +93,17 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 75.959999999999994,
+            "value": 68.400000000000006,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100030,
+            "value": 100070,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100200,
+            "value": 100220,
             "qualityControl": "V"
         },
         "visibility": {
@@ -119,8 +126,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 430
+                },
+                "amount": "VV"
+            }
+        ]
     }
 }

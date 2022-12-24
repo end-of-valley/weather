@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KATW/observations/2022-12-24T01:45:00+00:00",
+    "id": "https://api.weather.gov/stations/KATW/observations/2022-12-24T02:45:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KATW/observations/2022-12-24T01:45:00+00:00",
+        "@id": "https://api.weather.gov/stations/KATW/observations/2022-12-24T02:45:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 280
         },
         "station": "https://api.weather.gov/stations/KATW",
-        "timestamp": "2022-12-24T01:45:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2022-12-24T02:45:00+00:00",
+        "rawMessage": "KATW 240245Z 26017G26KT 2SM -SN BLSN OVC021 M18/M21 A2961",
+        "textDescription": "Light Snow and Blowing Snow",
+        "icon": "https://api.weather.gov/icons/land/night/blizzard?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "snow",
+                "rawString": "-SN"
+            },
+            {
+                "intensity": null,
+                "modifier": "blowing",
+                "weather": "snow",
+                "rawString": "BLSN"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": -18,
@@ -71,7 +84,7 @@
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -22,
+            "value": -21,
             "qualityControl": "V"
         },
         "windDirection": {
@@ -86,12 +99,12 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 44.640000000000001,
+            "value": 48.240000000000002,
             "qualityControl": "S"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100310,
+            "value": 100270,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -129,7 +142,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 70.860430912314996,
+            "value": 77.322901676339995,
             "qualityControl": "V"
         },
         "windChill": {
@@ -142,6 +155,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 640
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
