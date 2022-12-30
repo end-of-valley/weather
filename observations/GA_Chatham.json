@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSVN/observations/2022-12-30T20:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KSVN/observations/2022-12-30T20:30:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSVN/observations/2022-12-30T20:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSVN/observations/2022-12-30T20:30:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 13
         },
         "station": "https://api.weather.gov/stations/KSVN",
-        "timestamp": "2022-12-30T20:05:00+00:00",
-        "rawMessage": "KSVN 302005Z AUTO 14005KT 10SM FEW013 BKN028 BKN033 OVC042 19/17 A3014 RMK AO2 RAB1955E05 SLP210 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-30T20:30:00+00:00",
+        "rawMessage": "KSVN 302030Z AUTO 10004KT 10SM -DZ FEW005 SCT014 OVC022 19/17 A3014 RMK AO2 RAB1955E05DZB30 OVC V BKN SLP210 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 19,
@@ -76,12 +83,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 140,
+            "value": 100,
             "qualityControl": "S"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 9.3599999999999994,
+            "value": 7.5599999999999996,
             "qualityControl": "S"
         },
         "windGust": {
@@ -146,28 +153,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 400
+                    "value": 150
                 },
                 "amount": "FEW"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 850
+                    "value": 430
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1010
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1280
+                    "value": 670
                 },
                 "amount": "OVC"
             }
