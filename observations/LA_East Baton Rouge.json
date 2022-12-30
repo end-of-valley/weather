@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KBTR/observations/2022-12-30T12:04:00+00:00",
+    "id": "https://api.weather.gov/stations/KBTR/observations/2022-12-30T12:39:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,29 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KBTR/observations/2022-12-30T12:04:00+00:00",
+        "@id": "https://api.weather.gov/stations/KBTR/observations/2022-12-30T12:39:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 21
         },
         "station": "https://api.weather.gov/stations/KBTR",
-        "timestamp": "2022-12-30T12:04:00+00:00",
-        "rawMessage": "KBTR 301204Z 11010G18KT 7SM TSRA OVC006 19/18 A2992 RMK AO2 LTG DSNT ALQDS TSB1158 CIG 005V011 P0002 T01890183",
-        "textDescription": "Thunderstorms and Rain",
-        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "timestamp": "2022-12-30T12:39:00+00:00",
+        "rawMessage": "KBTR 301239Z VRB04G21KT 1 1/4SM VCTS +RA BR BKN008 BKN013 OVC020 17/16 A2997 RMK AO2 PK WND 31036/1220 LTG DSNT ALQDS TSB1158E37 P0055 T01670161",
+        "textDescription": "Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
                 "modifier": null,
-                "weather": "thunderstorms",
-                "rawString": "TS"
+                "weather": "rain",
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "rain",
-                "rawString": "RA"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -114,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 2010,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -127,7 +127,7 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
+            "value": 10,
             "qualityControl": "C"
         },
         "precipitationLast3Hours": {
@@ -159,7 +159,21 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 180
+                    "value": 240
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 400
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 610
                 },
                 "amount": "OVC"
             }
