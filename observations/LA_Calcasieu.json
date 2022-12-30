@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLCH/observations/2022-12-30T06:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KLCH/observations/2022-12-30T07:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLCH/observations/2022-12-30T06:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLCH/observations/2022-12-30T07:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 5
         },
         "station": "https://api.weather.gov/stations/KLCH",
-        "timestamp": "2022-12-30T06:53:00+00:00",
-        "rawMessage": "KLCH 300653Z 14017KT 10SM SCT085 BKN120 19/18 A2996 RMK AO2 LTG DSNT SW-N RAB40E53 SLP152 P0001 T01890178",
-        "textDescription": "Mostly Cloudy and Windy",
-        "icon": "https://api.weather.gov/icons/land/night/wind_bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2022-12-30T07:53:00+00:00",
+        "rawMessage": "KLCH 300753Z 14017KT 10SM -RA FEW050 SCT085 BKN110 19/18 A2993 RMK AO2 LTG DSNT NW-E RAB42 SLP143 P0000 T01890178",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 18.899999999999999,
@@ -91,12 +98,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101460,
+            "value": 101360,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101520,
+            "value": 101430,
             "qualityControl": "V"
         },
         "visibility": {
@@ -146,6 +153,13 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
+                    "value": 1520
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
                     "value": 2590
                 },
                 "amount": "SCT"
@@ -153,7 +167,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3660
+                    "value": 3350
                 },
                 "amount": "BKN"
             }
