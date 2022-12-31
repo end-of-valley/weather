@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KNBG/observations/2022-12-31T10:04:00+00:00",
+    "id": "https://api.weather.gov/stations/KNBG/observations/2022-12-31T10:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,17 +52,17 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KNBG/observations/2022-12-31T10:04:00+00:00",
+        "@id": "https://api.weather.gov/stations/KNBG/observations/2022-12-31T10:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 0
         },
         "station": "https://api.weather.gov/stations/KNBG",
-        "timestamp": "2022-12-31T10:04:00+00:00",
-        "rawMessage": "KNBG 311004Z AUTO 10003KT 10SM 15/15 A2996 RMK AO2 T01500150 $",
-        "textDescription": "",
-        "icon": null,
+        "timestamp": "2022-12-31T10:35:00+00:00",
+        "rawMessage": "KNBG 311035Z AUTO 10003KT 10SM SCT003 BKN030 OVC050 15/15 A2996 RMK AO2 T01500150 $",
+        "textDescription": "Cloudy",
+        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
         "presentWeather": [],
         "temperature": {
             "unitCode": "wmoUnit:degC",
@@ -142,6 +142,28 @@
             "value": null,
             "qualityControl": "Z"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 90
+                },
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 910
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1520
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
