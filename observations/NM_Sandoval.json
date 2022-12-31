@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLAM/observations/2022-12-31T08:35:00+00:00",
+    "id": "https://api.weather.gov/stations/KLAM/observations/2022-12-31T08:55:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLAM/observations/2022-12-31T08:35:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLAM/observations/2022-12-31T08:55:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 2179
         },
         "station": "https://api.weather.gov/stations/KLAM",
-        "timestamp": "2022-12-31T08:35:00+00:00",
-        "rawMessage": "KLAM 310835Z AUTO 20004KT 10SM BKN030 OVC038 M01/M04 A2994 RMK AO2 T10091036",
-        "textDescription": "Cloudy",
+        "timestamp": "2022-12-31T08:55:00+00:00",
+        "rawMessage": "KLAM 310855Z AUTO 24003KT 9SM UP OVC029 M01/M03 A2993 RMK AO2 CIG 026V034 P0000 T10081034",
+        "textDescription": "Unknown Precipitation",
         "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "unknown",
+                "rawString": "UP"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +108,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 14480,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -146,14 +153,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 910
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1160
+                    "value": 880
                 },
                 "amount": "OVC"
             }
