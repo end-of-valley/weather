@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KMHT/observations/2023-01-01T02:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KMHT/observations/2023-01-01T03:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KMHT/observations/2023-01-01T02:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KMHT/observations/2023-01-01T03:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 71
         },
         "station": "https://api.weather.gov/stations/KMHT",
-        "timestamp": "2023-01-01T02:53:00+00:00",
-        "rawMessage": "KMHT 010253Z 19005KT 1/2SM R35/P6000FT BR OVC002 11/10 A2972 RMK AO2 SFC VIS 3/4 SLP076 60001 T01110100 58027",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2023-01-01T03:53:00+00:00",
+        "rawMessage": "KMHT 010353Z 19005KT 1/2SM R35/P6000FT -RA BR BKN002 OVC065 11/10 A2969 RMK AO2 SFC VIS 1 1/2 RAB01 SLP066 VIS SW-W 1/2 P0001 T01110100",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -98,12 +104,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100640,
+            "value": 100540,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100760,
+            "value": 100660,
             "qualityControl": "V"
         },
         "visibility": {
@@ -121,13 +127,13 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -154,6 +160,13 @@
                 "base": {
                     "unitCode": "wmoUnit:m",
                     "value": 60
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1980
                 },
                 "amount": "OVC"
             }
