@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLAM/observations/2023-01-02T17:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KLAM/observations/2023-01-02T17:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,29 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLAM/observations/2023-01-02T17:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLAM/observations/2023-01-02T17:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 2179
         },
         "station": "https://api.weather.gov/stations/KLAM",
-        "timestamp": "2023-01-02T17:15:00+00:00",
-        "rawMessage": "KLAM 021715Z AUTO 28011KT 1/4SM +SN FZFG VV005 M02/M03 A2974 RMK AO2 P0001 T10241029",
-        "textDescription": "Heavy Snow and Fog",
+        "timestamp": "2023-01-02T17:35:00+00:00",
+        "rawMessage": "KLAM 021735Z AUTO 25003KT 4SM -SN BR BKN008 BKN012 OVC021 M02/M04 A2972 RMK AO2 P0001 T10231036",
+        "textDescription": "Light Snow and Fog/Mist",
         "icon": "https://api.weather.gov/icons/land/day/snow?size=medium",
         "presentWeather": [
             {
-                "intensity": "heavy",
+                "intensity": "light",
                 "modifier": null,
                 "weather": "snow",
-                "rawString": "+SN"
+                "rawString": "-SN"
             },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "fog",
-                "rawString": "FG"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -114,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 400,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -159,9 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 150
+                    "value": 240
                 },
-                "amount": "VV"
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 370
+                },
+                "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 640
+                },
+                "amount": "OVC"
             }
         ]
     }
