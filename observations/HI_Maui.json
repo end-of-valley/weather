@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHOG/observations/2023-01-03T20:54:00+00:00",
+    "id": "https://api.weather.gov/stations/PHOG/observations/2023-01-03T21:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHOG/observations/2023-01-03T20:54:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHOG/observations/2023-01-03T21:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 20
         },
         "station": "https://api.weather.gov/stations/PHOG",
-        "timestamp": "2023-01-03T20:54:00+00:00",
-        "rawMessage": "PHOG 032054Z 34009KT 10SM SCT025 SCT035 24/19 A3006 RMK AO2 SLP184 60000 T02440194 50009 $",
-        "textDescription": "Partly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-03T21:54:00+00:00",
+        "rawMessage": "PHOG 032154Z 35010KT 10SM -RA SCT025 BKN050 24/21 A3005 RMK AO2 RAB30 SLP179 P0000 T02390206 $",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/day/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,13 +121,13 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -153,9 +160,9 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1070
+                    "value": 1520
                 },
-                "amount": "SCT"
+                "amount": "BKN"
             }
         ]
     }
