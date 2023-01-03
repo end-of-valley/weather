@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLQK/observations/2023-01-03T22:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KLQK/observations/2023-01-03T22:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLQK/observations/2023-01-03T22:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLQK/observations/2023-01-03T22:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 309
         },
         "station": "https://api.weather.gov/stations/KLQK",
-        "timestamp": "2023-01-03T22:15:00+00:00",
-        "rawMessage": "KLQK 032215Z AUTO 22005KT 3SM BR OVC003 17/17 A3000 RMK AO2 LTG DSNT NW T01670167",
-        "textDescription": "Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "timestamp": "2023-01-03T22:35:00+00:00",
+        "rawMessage": "KLQK 032235Z AUTO 25003KT 2SM +TSRA OVC003 17/17 A3001 RMK AO2 LTG DSNT NE THRU SW P0013 T01670167",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": null,
+                "intensity": "heavy",
                 "modifier": null,
-                "weather": "fog_mist",
-                "rawString": "BR"
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 4830,
+            "value": 3220,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -121,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
