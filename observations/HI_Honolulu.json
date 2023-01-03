@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/PHHI/observations/2023-01-03T12:55:00+00:00",
+    "id": "https://api.weather.gov/stations/PHHI/observations/2023-01-03T16:14:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/PHHI/observations/2023-01-03T12:55:00+00:00",
+        "@id": "https://api.weather.gov/stations/PHHI/observations/2023-01-03T16:14:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 255
         },
         "station": "https://api.weather.gov/stations/PHHI",
-        "timestamp": "2023-01-03T12:55:00+00:00",
-        "rawMessage": "PHHI 031255Z AUTO 33004KT 10SM BKN037 19/14 A3004 RMK AO2 SLP164 T01850138 $",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-03T16:14:00+00:00",
+        "rawMessage": "PHHI 031614Z AUTO 35003KT 10SM -DZ FEW019 BKN025 OVC032 19/15 A3004 RMK AO2 DZB14 CIG 023V031 SLP165 $",
+        "textDescription": "Light Drizzle",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "drizzle",
+                "rawString": "-DZ"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,9 +153,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1130
+                    "value": 580
+                },
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 760
                 },
                 "amount": "BKN"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 980
+                },
+                "amount": "OVC"
             }
         ]
     }
