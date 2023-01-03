@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KRST/observations/2023-01-03T06:30:00+00:00",
+    "id": "https://api.weather.gov/stations/KRST/observations/2023-01-03T06:54:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KRST/observations/2023-01-03T06:30:00+00:00",
+        "@id": "https://api.weather.gov/stations/KRST/observations/2023-01-03T06:54:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 402
         },
         "station": "https://api.weather.gov/stations/KRST",
-        "timestamp": "2023-01-03T06:30:00+00:00",
-        "rawMessage": "KRST 030630Z AUTO 04009KT FZRA FEW004 FEW014 OVC050 00/M02 A2986 RMK AO2 UPB02E13FZRAB13SNE02 P0006 I1002 T00001017 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-03T06:54:00+00:00",
+        "rawMessage": "KRST 030654Z AUTO 03009KT FZRA BKN003 OVC037 00/M02 A2985 RMK AO2 UPB02E13FZRAB13SNE02 SLP123 P0012 I1004 T00001017 $",
+        "textDescription": "Freezing Rain",
+        "icon": "https://api.weather.gov/icons/land/night/fzra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "freezing",
+                "weather": "rain",
+                "rawString": "FZRA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 0,
@@ -76,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 40,
+            "value": 30,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,13 +98,13 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101120,
+            "value": 101080,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 101230,
+            "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
@@ -146,21 +153,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 120
+                    "value": 90
                 },
-                "amount": "FEW"
+                "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 430
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 1130
                 },
                 "amount": "OVC"
             }
