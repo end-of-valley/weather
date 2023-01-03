@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOCF/observations/2023-01-03T10:01:00+00:00",
+    "id": "https://api.weather.gov/stations/KOCF/observations/2023-01-03T10:27:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOCF/observations/2023-01-03T10:01:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOCF/observations/2023-01-03T10:27:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 27
         },
         "station": "https://api.weather.gov/stations/KOCF",
-        "timestamp": "2023-01-03T10:01:00+00:00",
-        "rawMessage": "KOCF 031001Z AUTO 00000KT 1/2SM FG CLR 16/16 A3017 RMK AO2 RAE0955 P0000 $",
-        "textDescription": "Fog",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2023-01-03T10:27:00+00:00",
+        "rawMessage": "KOCF 031027Z AUTO 00000KT 2 1/2SM -RA BR CLR 16/16 A3017 RMK AO2 VIS 1 1/2V5 RAE0955B13 P0000 $",
+        "textDescription": "Light Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
-                "weather": "fog",
-                "rawString": "FG"
+                "weather": "fog_mist",
+                "rawString": "BR"
             }
         ],
         "temperature": {
@@ -108,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 800,
+            "value": 4020,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
