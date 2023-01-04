@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KOXC/observations/2023-01-04T02:51:00+00:00",
+    "id": "https://api.weather.gov/stations/KOXC/observations/2023-01-04T03:51:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,24 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KOXC/observations/2023-01-04T02:51:00+00:00",
+        "@id": "https://api.weather.gov/stations/KOXC/observations/2023-01-04T03:51:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 222
         },
         "station": "https://api.weather.gov/stations/KOXC",
-        "timestamp": "2023-01-04T02:51:00+00:00",
-        "rawMessage": "KOXC 040251Z AUTO 00000KT 1/4SM FG OVC001 10/10 A2981 RMK AO2 RAB10E40 SLP109 P0000 60002 T01000100 56007",
-        "textDescription": "Fog",
-        "icon": "https://api.weather.gov/icons/land/night/fog?size=medium",
+        "timestamp": "2023-01-04T03:51:00+00:00",
+        "rawMessage": "KOXC 040351Z AUTO 00000KT 1/4SM -RA FG OVC001 10/10 A2978 RMK AO2 RAB17 PRESFR SLP100 P0000 T01000100",
+        "textDescription": "Light Rain and Fog",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
         "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
             {
                 "intensity": null,
                 "modifier": null,
@@ -98,12 +104,12 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100950,
+            "value": 100850,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101090,
+            "value": 101000,
             "qualityControl": "V"
         },
         "visibility": {
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
