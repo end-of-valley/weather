@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KATL/observations/2023-01-04T02:52:00+00:00",
+    "id": "https://api.weather.gov/stations/KATL/observations/2023-01-04T03:02:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KATL/observations/2023-01-04T02:52:00+00:00",
+        "@id": "https://api.weather.gov/stations/KATL/observations/2023-01-04T03:02:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 315
         },
         "station": "https://api.weather.gov/stations/KATL",
-        "timestamp": "2023-01-04T02:52:00+00:00",
-        "rawMessage": "KATL 040252Z 00000KT 7SM -RA FEW020 BKN050 OVC110 17/16 A2998 RMK AO2 LTG DSNT N RAB39 SLP148 CB DSNT SW-NW-NE P0005 60009 T01720161 52005",
-        "textDescription": "Light Rain",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2023-01-04T03:02:00+00:00",
+        "rawMessage": "KATL 040302Z 00000KT 8SM -TSRA SCT020CB BKN048 OVC100 17/16 A2999 RMK AO2 TSB02 OCNL LTGIC VC SW-NW-DSNT NE TS VC SW-NW-DSNT NE MOV NE P0000 T01720161",
+        "textDescription": "Thunderstorms and Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": null,
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "TS"
+            },
+            {
+                "intensity": null,
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "RA"
             }
         ],
         "temperature": {
@@ -98,17 +104,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101520,
+            "value": 101560,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101480,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 11270,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -126,8 +132,8 @@
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": 0,
-            "qualityControl": "C"
+            "value": null,
+            "qualityControl": "Z"
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
@@ -155,19 +161,19 @@
                     "unitCode": "wmoUnit:m",
                     "value": 610
                 },
-                "amount": "FEW"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1520
+                    "value": 1460
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 3350
+                    "value": 3050
                 },
                 "amount": "OVC"
             }
