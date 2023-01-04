@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCEW/observations/2023-01-04T11:03:00+00:00",
+    "id": "https://api.weather.gov/stations/KCEW/observations/2023-01-04T11:13:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,23 +52,29 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCEW/observations/2023-01-04T11:03:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCEW/observations/2023-01-04T11:13:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 65
         },
         "station": "https://api.weather.gov/stations/KCEW",
-        "timestamp": "2023-01-04T11:03:00+00:00",
-        "rawMessage": "KCEW 041103Z AUTO 21013G19KT 6SM VCTS -RA BR BKN015 OVC021 24/22 A2989 RMK AO2 LTG DSNT SW-N RAB02 P0002 T02390222",
-        "textDescription": "Light Rain and Fog/Mist",
-        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "timestamp": "2023-01-04T11:13:00+00:00",
+        "rawMessage": "KCEW 041113Z AUTO 21013G21KT 4SM +TSRA BR BKN013 OVC020 23/22 A2989 RMK AO2 LTG DSNT ALQDS RAB02 TSB07 P0007 T02330222",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
         "presentWeather": [
             {
-                "intensity": "light",
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
                 "modifier": null,
                 "weather": "rain",
-                "rawString": "-RA"
+                "rawString": "+RA"
             },
             {
                 "intensity": null,
@@ -99,8 +105,8 @@
         },
         "windGust": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 35.280000000000001,
-            "qualityControl": "S"
+            "value": null,
+            "qualityControl": "Z"
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
@@ -114,7 +120,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 9660,
+            "value": 6440,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -159,14 +165,14 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 460
+                    "value": 400
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 640
+                    "value": 610
                 },
                 "amount": "OVC"
             }
