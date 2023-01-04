@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCHA/observations/2023-01-04T10:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KCHA/observations/2023-01-04T11:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,37 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCHA/observations/2023-01-04T10:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCHA/observations/2023-01-04T11:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 210
         },
         "station": "https://api.weather.gov/stations/KCHA",
-        "timestamp": "2023-01-04T10:53:00+00:00",
-        "rawMessage": "KCHA 041053Z 18003KT 10SM BKN009 BKN045 OVC080 17/16 A2980 RMK AO2 RAB27E37 SLP087 CB DSNT SE P0000 T01670156 $",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-04T11:53:00+00:00",
+        "rawMessage": "KCHA 041153Z VRB05KT 1SM R02/3000VP6000FT +TSRA BR SCT009 OVC015CB 17/16 A2978 RMK AO2 LTG DSNT SW RAB1059E14B45 TSB45 PRESFR SLP079 FRQ LTGICCG OHD-S-W TS OHD-S-W MOV NE P0002 60056 70135 T01670156 10167 20150 58011 $",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain and Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 16.699999999999999,
@@ -76,12 +95,12 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 180,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
-            "value": 5.4000000000000004,
+            "value": 9.3599999999999994,
             "qualityControl": "V"
         },
         "windGust": {
@@ -91,17 +110,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100920,
+            "value": 100850,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 100870,
+            "value": 100790,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 1610,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -124,8 +143,8 @@
         },
         "precipitationLast6Hours": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 10,
+            "qualityControl": "C"
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
@@ -148,19 +167,12 @@
                     "unitCode": "wmoUnit:m",
                     "value": 270
                 },
-                "amount": "BKN"
+                "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1370
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2440
+                    "value": 460
                 },
                 "amount": "OVC"
             }
