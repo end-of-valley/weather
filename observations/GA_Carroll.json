@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCTJ/observations/2023-01-04T09:15:00+00:00",
+    "id": "https://api.weather.gov/stations/KCTJ/observations/2023-01-04T09:35:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCTJ/observations/2023-01-04T09:15:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCTJ/observations/2023-01-04T09:35:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 354
         },
         "station": "https://api.weather.gov/stations/KCTJ",
-        "timestamp": "2023-01-04T09:15:00+00:00",
-        "rawMessage": "KCTJ 040915Z AUTO 25006G18KT 2 1/2SM /VCTSRA SCT004 BKN017 BKN024 17/17 A2993 RMK AO2 LTG DSNT NE THRU S T01710170",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-04T09:35:00+00:00",
+        "rawMessage": "KCTJ 040935Z AUTO 00000KT 2 1/2SM +TSRA SCT013 BKN027 OVC110 16/15 A2990 RMK AO2 LTG DSNT ALQS T01590153",
+        "textDescription": "Heavy Thunderstorms and Heavy Rain",
+        "icon": "https://api.weather.gov/icons/land/night/tsra?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "thunderstorms",
+                "rawString": "+TS"
+            },
+            {
+                "intensity": "heavy",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "+RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -146,23 +159,23 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 120
+                    "value": 400
                 },
                 "amount": "SCT"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 520
+                    "value": 820
                 },
                 "amount": "BKN"
             },
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 730
+                    "value": 3350
                 },
-                "amount": "BKN"
+                "amount": "OVC"
             }
         ]
     }
