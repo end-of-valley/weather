@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KPYM/observations/2023-01-05T19:21:00+00:00",
+    "id": "https://api.weather.gov/stations/KPYM/observations/2023-01-05T20:03:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KPYM/observations/2023-01-05T19:21:00+00:00",
+        "@id": "https://api.weather.gov/stations/KPYM/observations/2023-01-05T20:03:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 45
         },
         "station": "https://api.weather.gov/stations/KPYM",
-        "timestamp": "2023-01-05T19:21:00+00:00",
-        "rawMessage": "",
-        "textDescription": "",
-        "icon": null,
-        "presentWeather": [],
+        "timestamp": "2023-01-05T20:03:00+00:00",
+        "rawMessage": "KPYM 052003Z AUTO 02009KT 2SM BR OVC004 07/06 A2996 RMK AO2 T00720061",
+        "textDescription": "Fog/Mist",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog_mist",
+                "rawString": "BR"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": 7.2000000000000002,
@@ -76,7 +83,7 @@
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 30,
+            "value": 20,
             "qualityControl": "V"
         },
         "windSpeed": {
@@ -91,7 +98,7 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 101420,
+            "value": 101460,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
@@ -142,6 +149,14 @@
             "value": null,
             "qualityControl": "V"
         },
-        "cloudLayers": []
+        "cloudLayers": [
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 120
+                },
+                "amount": "OVC"
+            }
+        ]
     }
 }
