@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KSMQ/observations/2023-01-07T20:53:00+00:00",
+    "id": "https://api.weather.gov/stations/KSMQ/observations/2023-01-07T21:53:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,32 +52,39 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KSMQ/observations/2023-01-07T20:53:00+00:00",
+        "@id": "https://api.weather.gov/stations/KSMQ/observations/2023-01-07T21:53:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 32
         },
         "station": "https://api.weather.gov/stations/KSMQ",
-        "timestamp": "2023-01-07T20:53:00+00:00",
-        "rawMessage": "KSMQ 072053Z AUTO 31004KT 10SM BKN043 OVC060 07/M01 A3013 RMK AO2 SLP206 T00671006 53005",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/day/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-07T21:53:00+00:00",
+        "rawMessage": "KSMQ 072153Z AUTO VRB04KT 8SM -RA FEW039 SCT048 OVC060 06/00 A3015 RMK AO2 RAB47 SLP214 P0000 T00560000",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 6.7000000000000002,
+            "value": 5.5999999999999996,
             "qualityControl": "V"
         },
         "dewpoint": {
             "unitCode": "wmoUnit:degC",
-            "value": -0.59999999999999998,
+            "value": 0,
             "qualityControl": "V"
         },
         "windDirection": {
             "unitCode": "wmoUnit:degree_(angle)",
-            "value": 310,
-            "qualityControl": "V"
+            "value": null,
+            "qualityControl": "Z"
         },
         "windSpeed": {
             "unitCode": "wmoUnit:km_h-1",
@@ -91,17 +98,17 @@
         },
         "barometricPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102030,
+            "value": 102100,
             "qualityControl": "V"
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102060,
+            "value": 102140,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 16090,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -129,12 +136,12 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 59.662840582445,
+            "value": 67.236128296998999,
             "qualityControl": "V"
         },
         "windChill": {
             "unitCode": "wmoUnit:degC",
-            "value": 5.2547085060633334,
+            "value": 3.9687368615694445,
             "qualityControl": "V"
         },
         "heatIndex": {
@@ -146,9 +153,16 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 1310
+                    "value": 1190
                 },
-                "amount": "BKN"
+                "amount": "FEW"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1460
+                },
+                "amount": "SCT"
             },
             {
                 "base": {
