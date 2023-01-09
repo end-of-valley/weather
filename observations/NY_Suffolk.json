@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KHWV/observations/2023-01-09T05:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KHWV/observations/2023-01-09T06:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,25 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KHWV/observations/2023-01-09T05:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KHWV/observations/2023-01-09T06:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 25
         },
         "station": "https://api.weather.gov/stations/KHWV",
-        "timestamp": "2023-01-09T05:56:00+00:00",
-        "rawMessage": "KHWV 090556Z AUTO 17003KT 10SM FEW026 BKN070 OVC090 01/M02 A3008 RMK AO2 SLP186 T00111022 10011 21022 58030",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-09T06:56:00+00:00",
+        "rawMessage": "KHWV 090656Z AUTO 00000KT 10SM -RA OVC050 03/M01 A3007 RMK AO2 RAB40 SLP181 P0000 T00331011",
+        "textDescription": "Light Rain",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -114,8 +121,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
@@ -146,21 +153,7 @@
             {
                 "base": {
                     "unitCode": "wmoUnit:m",
-                    "value": 790
-                },
-                "amount": "FEW"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2130
-                },
-                "amount": "BKN"
-            },
-            {
-                "base": {
-                    "unitCode": "wmoUnit:m",
-                    "value": 2740
+                    "value": 1520
                 },
                 "amount": "OVC"
             }
