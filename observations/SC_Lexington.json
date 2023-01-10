@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KCAE/observations/2023-01-10T11:56:00+00:00",
+    "id": "https://api.weather.gov/stations/KCAE/observations/2023-01-10T12:56:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,21 +52,28 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KCAE/observations/2023-01-10T11:56:00+00:00",
+        "@id": "https://api.weather.gov/stations/KCAE/observations/2023-01-10T12:56:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 69
         },
         "station": "https://api.weather.gov/stations/KCAE",
-        "timestamp": "2023-01-10T11:56:00+00:00",
-        "rawMessage": "KCAE 101156Z 00000KT 9SM BKN150 02/00 A3012 RMK AO2 SLP200 T00170000 10033 20011 53002",
-        "textDescription": "Mostly Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-10T12:56:00+00:00",
+        "rawMessage": "KCAE 101256Z 00000KT 8SM BCFG SCT150 SCT180 01/00 A3012 RMK AO2 SLP202 T00110000",
+        "textDescription": "Patchy Fog",
+        "icon": "https://api.weather.gov/icons/land/day/fog?size=medium",
+        "presentWeather": [
+            {
+                "intensity": null,
+                "modifier": "patches",
+                "weather": "fog",
+                "rawString": "BCFG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
-            "value": 1.7,
+            "value": 1.1000000000000001,
             "qualityControl": "V"
         },
         "dewpoint": {
@@ -96,12 +103,12 @@
         },
         "seaLevelPressure": {
             "unitCode": "wmoUnit:Pa",
-            "value": 102000,
+            "value": 102020,
             "qualityControl": "V"
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 12870,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -129,7 +136,7 @@
         },
         "relativeHumidity": {
             "unitCode": "wmoUnit:percent",
-            "value": 88.477151746125998,
+            "value": 92.365984956451996,
             "qualityControl": "V"
         },
         "windChill": {
@@ -148,7 +155,14 @@
                     "unitCode": "wmoUnit:m",
                     "value": 4570
                 },
-                "amount": "BKN"
+                "amount": "SCT"
+            },
+            {
+                "base": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 5490
+                },
+                "amount": "SCT"
             }
         ]
     }
