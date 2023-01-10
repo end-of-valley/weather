@@ -42,7 +42,7 @@
             }
         }
     ],
-    "id": "https://api.weather.gov/stations/KLRD/observations/2023-01-10T12:05:00+00:00",
+    "id": "https://api.weather.gov/stations/KLRD/observations/2023-01-10T12:27:00+00:00",
     "type": "Feature",
     "geometry": {
         "type": "Point",
@@ -52,18 +52,31 @@
         ]
     },
     "properties": {
-        "@id": "https://api.weather.gov/stations/KLRD/observations/2023-01-10T12:05:00+00:00",
+        "@id": "https://api.weather.gov/stations/KLRD/observations/2023-01-10T12:27:00+00:00",
         "@type": "wx:ObservationStation",
         "elevation": {
             "unitCode": "wmoUnit:m",
             "value": 155
         },
         "station": "https://api.weather.gov/stations/KLRD",
-        "timestamp": "2023-01-10T12:05:00+00:00",
-        "rawMessage": "KLRD 101205Z 18003KT 9SM OVC002 13/12 A3010 RMK AO2",
-        "textDescription": "Cloudy",
-        "icon": "https://api.weather.gov/icons/land/night/ovc?size=medium",
-        "presentWeather": [],
+        "timestamp": "2023-01-10T12:27:00+00:00",
+        "rawMessage": "KLRD 101227Z 00000KT 1/4SM -RA FG OVC002 13/13 A3010 RMK AO2 RAB23 P0000",
+        "textDescription": "Light Rain and Fog",
+        "icon": "https://api.weather.gov/icons/land/night/rain?size=medium",
+        "presentWeather": [
+            {
+                "intensity": "light",
+                "modifier": null,
+                "weather": "rain",
+                "rawString": "-RA"
+            },
+            {
+                "intensity": null,
+                "modifier": null,
+                "weather": "fog",
+                "rawString": "FG"
+            }
+        ],
         "temperature": {
             "unitCode": "wmoUnit:degC",
             "value": null,
@@ -101,7 +114,7 @@
         },
         "visibility": {
             "unitCode": "wmoUnit:m",
-            "value": 14480,
+            "value": 400,
             "qualityControl": "C"
         },
         "maxTemperatureLast24Hours": {
@@ -114,8 +127,8 @@
         },
         "precipitationLastHour": {
             "unitCode": "wmoUnit:mm",
-            "value": null,
-            "qualityControl": "Z"
+            "value": 0,
+            "qualityControl": "C"
         },
         "precipitationLast3Hours": {
             "unitCode": "wmoUnit:mm",
